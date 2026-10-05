@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Han Gia Luu | AI Researcher</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Times New Roman",Times,serif;color:#39383A;background:#DEACAA;line-height:1.5}
+a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
+.container{width:min(1120px,90%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;font-size:16px}
+.nav-name{font-weight:bold;letter-spacing:.03em}.nav-links{display:flex;gap:28px}
+.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding:70px 0 100px}
+.hero-label{font-size:15px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:25px}
+.hero h1{font-size:clamp(64px,11vw,150px);line-height:.88;font-weight:normal;letter-spacing:-.055em}
+.hero-subtitle{margin-top:42px;font-size:clamp(22px,3vw,34px);max-width:760px;line-height:1.2}
+.hero-actions{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
+.button{display:inline-block;padding:9px 18px;border:1px solid #39383A;background:#E8DDD1;transition:.2s}
+.button:hover{background:#DBBFBF;text-decoration:none}
+section{padding:110px 0}.section-number{font-size:14px;letter-spacing:.12em;margin-bottom:12px}
+.section-title{font-size:clamp(42px,6vw,78px);font-weight:normal;line-height:1;margin-bottom:55px}
+.about{background:#EBE5E0}.about-text{max-width:760px;font-size:clamp(24px,3vw,36px);line-height:1.3}
+.about-text p+p{margin-top:30px}.dreamy{font-size:.9em}
+.exploring{background:#E8DDD1}.exploring-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #39383A;border-left:1px solid #39383A}
+.exploring-item{min-height:220px;padding:30px;border-right:1px solid #39383A;border-bottom:1px solid #39383A}
+.exploring-item h3{font-size:25px;font-weight:normal;margin-bottom:25px}.exploring-item p{font-size:18px;line-height:1.7}
+.work{background:#DEACAA}.project{display:grid;grid-template-columns:90px 1fr auto;gap:30px;padding:35px 0;border-top:1px solid #39383A;align-items:start}
+.project:last-child{border-bottom:1px solid #39383A}.project-number{font-size:18px}.project h3{font-size:clamp(28px,4vw,48px);font-weight:normal;line-height:1;margin-bottom:15px}
+.project-description{max-width:650px;font-size:18px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.tag{padding:5px 10px;background:#EBE5E0;border:1px solid #DBBFBF;font-size:14px}
+.project-link{font-size:15px;white-space:nowrap;padding-top:8px}.journey{background:#EBE5E0}.timeline{border-left:1px solid #39383A}
+.timeline-item{display:grid;grid-template-columns:150px 1fr;padding:28px 0 28px 30px;border-bottom:1px solid #DBBFBF;position:relative}
+.timeline-item:before{content:"";width:10px;height:10px;background:#39383A;border-radius:50%;position:absolute;left:-5px;top:35px}
+.timeline-year{font-size:18px}.timeline-content h3{font-size:27px;font-weight:normal;margin-bottom:5px}.timeline-content p{font-size:17px}
+.experience{background:#E8DDD1}.experience-item{padding:35px 0;border-top:1px solid #39383A}.experience-item:last-child{border-bottom:1px solid #39383A}
+.experience-header{display:flex;justify-content:space-between;gap:30px}.experience-header h3{font-size:34px;font-weight:normal}
+.experience-date{font-size:17px;white-space:nowrap}.experience-role{font-size:19px;margin-top:5px}.experience-description{margin-top:18px;font-size:17px;max-width:800px}
+.education{background:#DEACAA}.education-main{display:grid;grid-template-columns:1fr 1fr;gap:60px}.education-block h3{font-size:32px;font-weight:normal;margin-bottom:8px}.education-block p{font-size:18px}
+.thesis{margin-top:25px;padding:25px;background:#DBBFBF;border:1px solid #39383A}.thesis-label{font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}.thesis-title{font-size:21px}
+.publications{background:#EBE5E0}.publication{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:30px 0;border-top:1px solid #39383A}.publication:last-child{border-bottom:1px solid #39383A}
+.publication-type{font-size:15px;letter-spacing:.08em;text-transform:uppercase}.publication h3{font-size:25px;font-weight:normal;margin-bottom:8px}.publication p{font-size:17px}
+.contact{min-height:65vh;display:flex;align-items:center;background:#DEACAA}.contact-title{font-size:clamp(60px,10vw,130px);font-weight:normal;line-height:.9;letter-spacing:-.05em}
+.contact-subtitle{font-size:22px;margin-top:35px;max-width:600px}.contact-links{display:flex;gap:25px;flex-wrap:wrap;margin-top:35px;font-size:18px}
+footer{padding:25px 0;border-top:1px solid #39383A;font-size:14px;display:flex;justify-content:space-between}
+@media(max-width:760px){
+.container{width:88%}nav{align-items:flex-start}.nav-links{gap:12px;font-size:14px}.hero{min-height:70vh;padding-top:40px}
+.hero h1{font-size:clamp(58px,17vw,100px)}section{padding:75px 0}.exploring-grid{grid-template-columns:1fr}
+.project{grid-template-columns:45px 1fr;gap:15px}.project-link{grid-column:2}.timeline-item{grid-template-columns:100px 1fr}
+.experience-header{flex-direction:column;gap:5px}.education-main{grid-template-columns:1fr}.publication{grid-template-columns:1fr;gap:10px}
+footer{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+<a href="#" class="nav-name">HAN GIA LUU</a>
+<div class="nav-links">
+<a href="#about">about</a><a href="#work">work</a><a href="#research">research</a><a href="#contact">contact</a>
+</div>
+</nav>
+<header class="hero">
+<div class="hero-label">AI Researcher · NLP · Large Language Models</div>
+<h1>HAN<br>GIA LUU</h1>
+<p class="hero-subtitle">From data and digital transformation to language understanding and knowledge representation.</p>
+<div class="hero-actions">
+<a href="#research" class="button">Research</a><a href="#work" class="button">Projects</a><a href="https://github.com/hanaluw" class="button">GitHub</a>
+</div>
+</header>
+</div>
+
+<section class="about" id="about"><div class="container">
+<div class="section-number">01</div><h2 class="section-title">ABOUT</h2>
+<div class="about-text">
+<p>I love swimming and being a day dreamer. I also love learning how to learn and unlearn! <span class="dreamy">🐚 ☁️ 𓂃 ࣪˖ ִֶָ𐀔</span></p>
+<p>You can call me <strong>Hanna, Hanliu, Jia, 嘉欣, pumpkin, sugar, princess, sweetie...</strong> Through topic modeling methods, I’m 100% sure these all refer to me! <span class="dreamy">𓆩♡𓆪 ✧˖° ☾ ⋆｡˚ 🪽</span></p>
+</div></div></section>
+
+<section class="exploring" id="research"><div class="container">
+<div class="section-number">02</div><h2 class="section-title">CURRENTLY<br>EXPLORING</h2>
+<div class="exploring-grid">
+<div class="exploring-item"><h3>Natural Language Processing</h3><p>Information Extraction<br>Vietnamese NLP<br>LLM-assisted NLP</p></div>
+<div class="exploring-item"><h3>Knowledge Representation</h3><p>Knowledge Graphs<br>Entity &amp; Relation Modeling<br>Temporal Information</p></div>
+<div class="exploring-item"><h3>AI Systems</h3><p>Graph-RAG<br>Retrieval<br>Multi-step Reasoning</p></div>
+</div></div></section>
+
+<section class="work" id="work"><div class="container">
+<div class="section-number">03</div><h2 class="section-title">SELECTED<br>WORK</h2>
+
+<article class="project"><div class="project-number">01</div><div><h3>Financial Event Extraction</h3><p class="project-description">LLM-assisted extraction of structured financial events and entities from Vietnamese financial news.</p><div class="tags"><span class="tag">NLP</span><span class="tag">LLM</span><span class="tag">Information Extraction</span><span class="tag">Vietnamese</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
+
+<article class="project"><div class="project-number">02</div><div><h3>Vietnamese FinTech Text Mining</h3><p class="project-description">A text-mining study of Vietnamese financial news using BERT-based models and topic modeling to examine the evolution of FinTech services.</p><div class="tags"><span class="tag">BERT</span><span class="tag">LDA</span><span class="tag">BERTopic</span><span class="tag">HDBSCAN</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
+
+<article class="project"><div class="project-number">03</div><div><h3>FinTech Data Platform</h3><p class="project-description">A data pipeline for crawling, processing, storing, and preparing Vietnamese financial news for downstream NLP and knowledge extraction.</p><div class="tags"><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">Kafka</span><span class="tag">PostgreSQL</span><span class="tag">MinIO</span><span class="tag">Spark</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
+
+<article class="project"><div class="project-number">04</div><div><h3>Healthcare Data &amp; AI</h3><p class="project-description">Data architecture, governance, interoperability, and analytics for healthcare digital transformation.</p><div class="tags"><span class="tag">Data Architecture</span><span class="tag">FHIR</span><span class="tag">Data Governance</span><span class="tag">ETL</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
+</div></section>
+
+<section class="journey"><div class="container">
+<div class="section-number">04</div><h2 class="section-title">RESEARCH<br>JOURNEY</h2>
+<div class="timeline">
+<div class="timeline-item"><div class="timeline-year">2021</div><div class="timeline-content"><h3>Business Analytics</h3><p>Hanoi University of Science and Technology</p></div></div>
+<div class="timeline-item"><div class="timeline-year">2024</div><div class="timeline-content"><h3>Data Analytics</h3><p>NLP · Sentiment Analysis</p></div></div>
+<div class="timeline-item"><div class="timeline-year">2025</div><div class="timeline-content"><h3>FinTech Text Mining</h3><p>Undergraduate Thesis · Vietnamese financial news</p></div></div>
+<div class="timeline-item"><div class="timeline-year">2025–26</div><div class="timeline-content"><h3>Data &amp; AI Transformation</h3><p>Healthcare · Data Architecture · Governance</p></div></div>
+<div class="timeline-item"><div class="timeline-year">2026 →</div><div class="timeline-content"><h3>NLP · LLM · Knowledge Representation</h3><p>Information Extraction · Knowledge Graphs · Graph-RAG</p></div></div>
+</div></div></section>
+
+<section class="experience"><div class="container">
+<div class="section-number">05</div><h2 class="section-title">EXPERIENCE</h2>
+<div class="experience-item"><div class="experience-header"><div><h3>LEAD Consulting</h3><div class="experience-role">Business Analyst · Health Informatics Analyst</div></div><div class="experience-date">2025 — Present</div></div><p class="experience-description">Data &amp; AI strategy · Data architecture · Governance · Interoperability · Analytics</p></div>
+<div class="experience-item"><div class="experience-header"><div><h3>LEAD Consulting</h3><div class="experience-role">Data Analyst Intern</div></div><div class="experience-date">2025</div></div><p class="experience-description">ETL pipelines · Dashboard automation · Data modeling · Sentiment analysis</p></div>
+<div class="experience-item"><div class="experience-header"><div><h3>Five-Star E-Learning</h3><div class="experience-role">Business Analyst · Information Technology Intern</div></div><div class="experience-date">2024</div></div><p class="experience-description">Multi-user e-learning platform · Wireframes · Website and assessment system design</p></div>
+</div></section>
+
+<section class="education"><div class="container">
+<div class="section-number">06</div><h2 class="section-title">EDUCATION</h2>
+<div class="education-main">
+<div class="education-block"><h3>Hanoi University of Science and Technology</h3><p>Bachelor in Business Analytics</p><p>2021 — 2025 · GPA 3.67 / 4.00</p></div>
+<div class="education-block"><div class="thesis"><div class="thesis-label">Undergraduate Thesis</div><div class="thesis-title">Understanding FinTech Services Evolution in Vietnam: A Text Mining Approach on News Media Data</div></div></div>
+</div></div></section>
+
+<section class="publications"><div class="container">
+<div class="section-number">07</div><h2 class="section-title">PUBLICATIONS</h2>
+<article class="publication"><div class="publication-type">2026 · Journal</div><div><h3>Measuring fintech development through composite indices: A text-mining-based review of fintech index studies.</h3><p>International Journal of Innovative Research and Scientific Studies</p><p>DOI: 10.53894/ijirss.v9i6.11737</p></div></article>
+<article class="publication"><div class="publication-type">2025 · Thesis</div><div><h3>Understanding FinTech Services Evolution in Vietnam: A Text Mining Approach on News Media Data.</h3><p>Hanoi University of Science and Technology</p></div></article>
+</div></section>
+
+<section class="contact" id="contact"><div class="container">
+<div class="section-number">08</div><h2 class="contact-title">LET'S<br>CONNECT.</h2>
+<p class="contact-subtitle">Interested in research collaboration, AI/NLP projects, or knowledge-intensive AI systems.</p>
+<div class="contact-links">
+<a href="https://github.com/hanaluw">GitHub</a>
+<a href="https://www.linkedin.com/in/h%C3%A2n-l%C6%B0u-gia-104906294/">LinkedIn</a>
+<a href="#">Google Scholar</a>
+<a href="mailto:your-email@example.com">Email</a>
+</div></div></section>
+
+<div class="container"><footer><span>© 2026 Han Gia Luu</span><span>AI · NLP · Knowledge</span></footer></div>
+</body>
+</html>
