@@ -97,7 +97,7 @@ window.portfolioActivities = [
   ], links: [{ label: "Certificate", href: "assets/certificates/05-conquer-marketing-data-via-tableau.jpg" }]
  },
  {
-  category: "Projects", years: [], year: "Date not specified", status: "Architecture proposal",
+  category: "Projects", years: ["2026"], year: "2026", status: "Architecture proposal",
   title: "AI-Embedded Healthcare Data Platform",
   affiliation: "Hospital data integration architecture", image: "assets/activities/images/healthcare-data-platform-representative.jpg", fit: "contain",
   alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform",
@@ -110,7 +110,7 @@ window.portfolioActivities = [
   ], links: []
  },
  {
-  category: "Projects", years: [], year: "Date not specified", status: "Independent project concept",
+  category: "Projects", years: ["2026"], year: "2026", status: "Independent project concept",
   title: "Project Fintech Intelligent Platform",
   affiliation: "Extension of my undergraduate thesis", image: "assets/activities/images/fintech-intelligent-platform-representative.jpg", fit: "contain",
   alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications",
