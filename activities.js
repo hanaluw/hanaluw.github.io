@@ -287,7 +287,7 @@ const activityGalleries = {
   { src: "assets/activities/images/fintech-thesis-presentation.jpg", alt: "Presenting findings from the fintech thesis", fit: "cover" },
   { src: "assets/activities/images/fintech-thesis-panel-session.jpg", alt: "Fintech research session at the conference", fit: "cover" },
   { src: "assets/activities/images/fintech-thesis-conference-visit.jpg", alt: "Conference visit with the research team", fit: "cover" },
-  { src: "assets/activities/images/fintech-thesis-methods-infographic.png", alt: "Visual summary of the fintech text-mining research", fit: "contain" }
+  { src: "assets/activities/images/fintech-thesis-representative.jpg", alt: "ICECH 2025 with Dr.HaThi Thu Trang and my classmates", fit: "contain" }
  ],
  "International Corporate Taxation & Compliance Case Competition": [
   { src: "assets/activities/images/tax-competition-announcement.png", alt: "Competition information and tax case materials", fit: "contain" },
