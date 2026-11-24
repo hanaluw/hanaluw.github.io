@@ -112,8 +112,8 @@ window.portfolioActivities = [
   {
     category: "Projects", years: [], year: "Date not specified", status: "Independent project concept",
     title: "Project Fintech Intelligent Platform",
-    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/fintech-intelligent-platform-concept.svg", fit: "contain",
-    alt: "Concept diagram of a fintech news data pipeline and future knowledge graph",
+    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/gallery/fintech-platform-original-docx-image.png", fit: "contain",
+    alt: "Fintech data pipeline architecture with Bronze–Silver–Gold layers and knowledge graph applications",
     excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
     description: [
       "This project extends my undergraduate thesis. Fintech information in Vietnam is scattered across financial news websites, making it difficult for researchers and analysts to track technology developments, company activity, and emerging market trends.",
@@ -250,6 +250,9 @@ window.portfolioActivities = [
 ];
 
 const activityGalleries = {
+  "Project Fintech Intelligent Platform": [
+    { src: "assets/activities/gallery/fintech-platform-original-docx-image.png", alt: "Fintech data pipeline architecture with Bronze–Silver–Gold layers and knowledge graph applications", fit: "contain" }
+  ],
   "Marketing Analytics & Advanced Tableau Visualization": [
     { src: "assets/activities/gallery/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
     { src: "assets/activities/gallery/tableau-retail-analysis-view-1.jpg", alt: "First Tableau retail analysis view", fit: "contain" },
