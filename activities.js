@@ -47,7 +47,7 @@ window.portfolioActivities = [
   {
     category: "Research", years: ["2025"], year: "2025", status: "Thesis presented at an international conference",
     title: "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
-    affiliation: "Business Dynamics in Emerging Economy conference", image: "assets/activities/images/fintech-thesis-representative.jpg", fit: "cover",
+    affiliation: "Business Dynamics in Emerging Economy conference", image: "assets/activities/images/textminingfintech.jpg", fit: "cover",
     alt: "Conference group at Business Dynamics in Emerging Economy 2025",
     excerpt: "Using LDA and BERTopic, our research explored how fintech services in Vietnam have evolved through patterns in financial news coverage.",
     description: [
