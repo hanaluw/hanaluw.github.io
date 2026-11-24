@@ -134,7 +134,6 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #portfolio .certificate-pdf-link{display:inline-block;margin-top:10px;font-size:13px;color:var(--accent);text-underline-offset:3px}
 
 /* Portfolio activities: compact research-style rows, keeping the existing site identity. */
-#portfolio .portfolio-hero{padding-bottom:34px}
 #portfolio .portfolio-content{padding-bottom:42px}
 #portfolio .portfolio-controls{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:14px 0 18px;border-bottom:1px solid var(--line)}
 #portfolio .category-filters{display:flex;flex-wrap:wrap;gap:8px}
@@ -170,7 +169,6 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #portfolio .filter-empty{padding:28px 0;font-size:15px}
 #portfolio .activity-item[hidden],#portfolio .activity-group[hidden]{display:none}
 @media(max-width:700px){
-  #portfolio .portfolio-hero{padding:30px 0 22px}
   #portfolio .portfolio-content{width:min(calc(100% - 28px),var(--content))}
   #portfolio .portfolio-controls{gap:10px 12px}
   #portfolio .category-filters{width:100%;gap:6px}
