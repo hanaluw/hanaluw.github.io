@@ -2,7 +2,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2024"], year: "2024", status: "Conference presentation · Third Prize",
   title: "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
-  highlights: ["227 research publications","TF-IDF","SVM classification","LDA topic modeling","development, adoption, and financial inclusion","Third Prize"],
+  highlights: ["227 research publications","TF-IDF","SVM classification","LDA topic modeling","development, adoption, and financial inclusion","Third Prize","National Economics University","Faculty of Mathematics and Informatics","Scopus","41st Student Research Conference","SEM - HUST"],
   skills: ["Text Mining","TF-IDF","SVM","LDA Topic Modeling","Research Synthesis"],
   affiliation: "National Economics University · SEM - HUST", image: "assets/activities/images/fintech-index-review-representative.jpg", fit: "cover",
   alt: "Research team presenting its fintech index study",
@@ -23,7 +23,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2024", "2025"], year: "2024 - 2025", status: "Outstanding Investment Research",
   title: "Equity Research & Financial Forecasting - CFA Institute Research Challenge",
-  highlights: ["Outstanding Investment Research","equity research","Porter’s Five Forces","historical financial statements","BUY recommendation","VND 33,500 per share","26.69%"],
+  highlights: ["Outstanding Investment Research","equity research","Porter’s Five Forces","historical financial statements","BUY recommendation","VND 33,500 per share","26.69%","CFA Institute Research Challenge in Vietnam","SSI Securities Corporation"],
   skills: ["Financial Analysis","Forecasting","Equity Valuation","Competitive Analysis"],
   affiliation: "CFA Institute Research Challenge in Vietnam", image: "assets/activities/images/cfa-research-representative.jpg", fit: "contain",
   alt: "Excerpt from the team’s SSI Securities equity research report",
@@ -38,7 +38,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2023"], year: "2023", status: "Student Research Conference",
   title: "Quantitative Research on Student Academic Performance - SPSS",
-  highlights: ["249 HUST students","SPSS","Pearson correlation analysis","multiple linear regression","statistical evidence"],
+  highlights: ["249 HUST students","SPSS","Pearson correlation analysis","multiple linear regression","statistical evidence","Hanoi University of Science and Technology","HUST"],
   skills: ["Survey Analysis","SPSS","Correlation","Linear Regression"],
   affiliation: "Hanoi University of Science and Technology", image: "assets/activities/images/student-academic-performance-representative.jpg", fit: "contain",
   alt: "Research poster on emotional intelligence, resilience, engagement, and academic performance",
@@ -53,7 +53,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2025"], year: "2025", status: "Thesis presented at an international conference",
   title: "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
-  highlights: ["undergraduate thesis","international conference","LDA and BERTopic","fintech services","new research questions"],
+  highlights: ["undergraduate thesis","international conference","LDA and BERTopic","fintech services","new research questions","Business Dynamics in Emerging Economy conference"],
   skills: ["News Data","Text Mining","LDA","BERTopic","Topic Modeling"],
   affiliation: "Business Dynamics in Emerging Economy conference", image: "assets/activities/images/textminingfintech.jpg", fit: "cover",
   alt: "Conference group at Business Dynamics in Emerging Economy 2025",
@@ -67,7 +67,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2026"], year: "2026", status: "Data management contribution",
   title: "Scholarship Data Management for Children with Disabilities",
-  highlights: ["2,133 scholarship beneficiary records","Python and Excel","87 cases (4%)","manual verification","data quality"],
+  highlights: ["2,133 scholarship beneficiary records","Python and Excel","87 cases (4%)","manual verification","data quality","Vietnam Fund for Children with Disabilities"],
   skills: ["Python","Excel","Data Cleaning","Record Reconciliation","Data Quality"],
   affiliation: "Vietnam Fund for Children with Disabilities", image: "assets/activities/images/scholarship-data-management-representative.jpg", fit: "contain",
   alt: "Certificate recognizing data management contribution",
@@ -83,7 +83,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2025"], year: "2025", status: "Data analyst internship",
   title: "Higher Education Admissions Analytics",
-  highlights: ["quartiles","university entrance examination scores","database of admission cutoff scores","manually searching for and cleaning data"],
+  highlights: ["quartiles","university entrance examination scores","database of admission cutoff scores","manually searching for and cleaning data","LEAD Consulting","HUST School of Economics and Management"],
   skills: ["Data Collection","Data Cleaning","Database Design","Admissions Analytics"],
   affiliation: "LEAD Consulting · HUST School of Economics and Management", image: "assets/activities/images/admissions-analytics-representative.jpg", fit: "contain",
   alt: "Data analyst internship certificate from LEAD Consulting",
@@ -98,7 +98,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2025"], year: "2025", status: "Workshop project",
   title: "Marketing Analytics & Advanced Tableau Visualization",
-  highlights: ["executive-level dashboards","Tableau","data preprocessing","schema design","4Ps (Product, Price, Place, and Promotion)"],
+  highlights: ["executive-level dashboards","Tableau","data preprocessing","schema design","4Ps (Product, Price, Place, and Promotion)","LEAD Consulting"],
   skills: ["Tableau","Data Visualization","Marketing Analytics","Data Preprocessing","Dashboard Design"],
   affiliation: "LEAD Consulting", image: "assets/activities/images/tableau-marketing-analytics-representative.jpg", fit: "contain",
   alt: "Tableau dashboard and market analysis visuals from a retail marketing project",
@@ -143,7 +143,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2026"], year: "2026", status: "Course completed",
   title: "Deep Learning, LLMs & Retrieval-Augmented Generation - VIASM",
-  highlights: ["backpropagation","LLMs","data labeling","RAG","open-weight models locally"],
+  highlights: ["backpropagation","LLMs","data labeling","RAG","open-weight models locally","Professor Vincent Lefieux","RTE","Vietnam Institute for Advanced Study in Mathematics","Banking Academy of Vietnam"],
   skills: ["Deep Learning","LLMs","RAG","Data Labeling","Model APIs"],
   affiliation: "Vietnam Institute for Advanced Study in Mathematics · Banking Academy of Vietnam", image: "assets/activities/images/llm-rag-course-representative.jpg", fit: "contain",
   alt: "Certificate of participation in an LLM and RAG course",
@@ -156,7 +156,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Champion",
   title: "Business Case Analysis & Problem-Solving - Managerial Accounting Mastermind",
-  highlights: ["Managerial Accounting Mastermind 2024","managerial accounting concepts","people, the environment, or processes and technology","Impact - Feasibility Matrix"],
+  highlights: ["Managerial Accounting Mastermind 2024","managerial accounting concepts","people, the environment, or processes and technology","Impact - Feasibility Matrix","HUST School of Economics and Management"],
   skills: ["Business Analysis","Root Cause Analysis","Process Analysis","Prioritization"],
   affiliation: "HUST School of Economics and Management", image: "assets/activities/images/managerial-accounting-champion-representative.png", fit: "cover",
   alt: "Team celebrating its Managerial Accounting Mastermind 2024 championship",
@@ -169,7 +169,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2023", "2024"], year: "2023 - 2024", status: "Training completed",
   title: "Enterprise Resource Planning & Business Process Integration - SAP S/4HANA",
-  highlights: ["SAP S/4HANA","purchase orders","data consistency","data integrity","system interoperability"],
+  highlights: ["SAP S/4HANA","purchase orders","data consistency","data integrity","system interoperability","SAP University Alliances"],
   skills: ["SAP S/4HANA","ERP","Data Integration","Business Processes","Data Integrity"],
   affiliation: "SAP University Alliances", image: "assets/activities/images/sap-s4hana-training-representative.jpg", fit: "contain",
   alt: "Certificate of participation in SAP S/4HANA training",
@@ -183,7 +183,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Six course certificates",
   title: "Google Data Analytics & Business Intelligence Training",
-  highlights: ["foundational data analyst concepts","Data Models and Pipelines","Business Intelligence","Dashboards and Reports","Data-Driven Decisions"],
+  highlights: ["foundational data analyst concepts","Data Models and Pipelines","Business Intelligence","Dashboards and Reports","Data-Driven Decisions","Google","Coursera"],
   skills: ["Data Analytics","Data Modeling","Data Pipelines","Business Intelligence","Dashboards"],
   affiliation: "Google · Coursera", image: "assets/activities/images/google-data-analytics-bi-representative.jpg", fit: "contain",
   alt: "Google and Coursera certificate for Decisions, Decisions: Dashboards and Reports",
@@ -204,7 +204,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024", "2025"], year: "2024 · 2025", status: "Mentor and speaker",
   title: "Student Mentorship & Academic Experience Sharing - Business Analytics",
-  highlights: ["Business Analytics program","four years at HUST","60 - 70 students"],
+  highlights: ["Business Analytics program","four years at HUST","60 - 70 students","Orientation Day for the 69th and 70th cohorts","HUST"],
   skills: ["Business Analytics","Communication","Mentorship","Student Engagement"],
   affiliation: "Orientation Day for the 69th and 70th cohorts · HUST", image: "assets/activities/images/orientation-day-group-photo.png", fit: "cover",
   alt: "Sharing experience with junior Business Analytics students",
@@ -218,7 +218,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Case competition",
   title: "International Corporate Taxation & Compliance Case Competition",
-  highlights: ["international double taxation","transfer pricing","BEPS","Global Minimum Tax","tax jurisdictions"],
+  highlights: ["international double taxation","transfer pricing","BEPS","Global Minimum Tax","tax jurisdictions","Double Taxation Agreements (DTAs)","Base Erosion and Profit Shifting (BEPS)","Global Minimum Tax (GMT)"],
   skills: ["Tax Research","Transfer Pricing","BEPS","Regulatory Analysis"],
   affiliation: "13 October 2024", image: "assets/activities/images/corporate-tax-competition-representative.jpg", fit: "cover",
   alt: "Participants reviewing materials at an international corporate tax case competition",
@@ -231,7 +231,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Business challenge participant",
   title: "Business Case Consulting - ICAEW Vietnam Business Challenge",
-  highlights: ["structured problem-solving journey","MECE","Fishbone","SWOT","Porter’s Five Forces","BCG Growth-Share Matrix"],
+  highlights: ["structured problem-solving journey","MECE","Fishbone","SWOT","Porter’s Five Forces","BCG Growth-Share Matrix","Deloitte","ICAEW Vietnam"],
   skills: ["Problem Structuring","MECE","SWOT","Fishbone Analysis","Business Frameworks"],
   affiliation: "Deloitte · ICAEW Vietnam", image: "assets/activities/images/icaew-business-challenge-representative.jpg", fit: "cover",
   alt: "Team at the ICAEW Vietnam Business Challenge 2024",

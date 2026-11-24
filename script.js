@@ -30,8 +30,8 @@ function renderPortfolio(){
       const gallerySection=gallery?`<div class="activity-gallery" data-gallery>${galleryNav}<div class="activity-gallery-stage" aria-live="polite">${gallery}</div>${galleryNext}</div>`:'';
       return `<article class="activity-item" data-category="${escapeHtml(activity.category)}" data-years="${activity.years.join(' ')}">
         <button class="activity-image" type="button" data-certificate="${escapeHtml(activity.image)}" data-title="${escapeHtml(activity.title)}" aria-label="View image: ${escapeHtml(activity.title)}"><img class="activity-thumb ${activity.fit==='contain'?'contain':''}" src="${escapeHtml(activity.image)}" alt="${escapeHtml(activity.alt)}" loading="lazy"/></button>
-        <div class="activity-body"><div class="activity-meta"><span class="activity-type">${escapeHtml(activity.category)}</span><span>${escapeHtml(activity.year)}</span><span class="activity-status">${escapeHtml(activity.status)}</span></div>
-          <h3>${escapeHtml(activity.title)}</h3><p class="activity-affiliation">${escapeHtml(activity.affiliation)}</p><p class="activity-excerpt">${formatHighlightedText(activity.excerpt,activity.highlights)}</p><div class="activity-skills" aria-label="Data science skills">${skills}</div>
+        <div class="activity-body"><div class="activity-meta"><span class="activity-type">${escapeHtml(activity.category)}</span><span>${escapeHtml(activity.year)}</span><span class="activity-status">${formatHighlightedText(activity.status,activity.highlights)}</span></div>
+          <h3>${escapeHtml(activity.title)}</h3><p class="activity-affiliation">${formatHighlightedText(activity.affiliation,activity.highlights)}</p><p class="activity-excerpt">${formatHighlightedText(activity.excerpt,activity.highlights)}</p><div class="activity-skills" aria-label="Data science skills">${skills}</div>
           ${links?`<div class="activity-links">${links}</div>`:''}
         </div><details class="activity-details"><summary>My full story</summary><div class="activity-full">${descriptions}${gallerySection}</div></details></article>`;
   }).join('');
