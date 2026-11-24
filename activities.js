@@ -99,8 +99,8 @@ window.portfolioActivities = [
   {
     category: "Projects", years: [], year: "Date not specified", status: "Architecture proposal",
     title: "AI-Embedded Healthcare Data Platform",
-    affiliation: "Hospital data integration architecture", image: "assets/activities/healthcare-data-platform-concept.svg", fit: "contain",
-    alt: "Concept diagram for an AI-embedded healthcare data platform",
+    affiliation: "Hospital data integration architecture", image: "assets/activities/ai-embedded-healthcare-data-platform.jpg", fit: "contain",
+    alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform",
     excerpt: "I explored a shared integration layer for fragmented hospital systems, using HL7 FHIR, OMOP CDM, and a Bronze–Silver–Gold data model to prepare reliable data for analytics and research.",
     description: [
       "While working with public hospitals in Vietnam, I observed how fragmented information systems require healthcare staff to bridge gaps manually, often through extensive paperwork. These disconnected systems also limit the use of clinical data.",
@@ -112,8 +112,8 @@ window.portfolioActivities = [
   {
     category: "Projects", years: [], year: "Date not specified", status: "Independent project concept",
     title: "Project Fintech Intelligent Platform",
-    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/gallery/fintech-platform-original-docx-image.png", fit: "contain",
-    alt: "Fintech data pipeline architecture with Bronze–Silver–Gold layers and knowledge graph applications",
+    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/fintech-intelligent-platform.jpg", fit: "contain",
+    alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications",
     excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
     description: [
       "This project extends my undergraduate thesis. Fintech information in Vietnam is scattered across financial news websites, making it difficult for researchers and analysts to track technology developments, company activity, and emerging market trends.",
@@ -250,8 +250,11 @@ window.portfolioActivities = [
 ];
 
 const activityGalleries = {
+  "AI-Embedded Healthcare Data Platform": [
+    { src: "assets/activities/ai-embedded-healthcare-data-platform.jpg", alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform", fit: "contain" }
+  ],
   "Project Fintech Intelligent Platform": [
-    { src: "assets/activities/gallery/fintech-platform-original-docx-image.png", alt: "Fintech data pipeline architecture with Bronze–Silver–Gold layers and knowledge graph applications", fit: "contain" }
+    { src: "assets/activities/fintech-intelligent-platform.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications", fit: "contain" }
   ],
   "Marketing Analytics & Advanced Tableau Visualization": [
     { src: "assets/activities/gallery/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
