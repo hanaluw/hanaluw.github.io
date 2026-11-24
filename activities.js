@@ -187,7 +187,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2024", "2025"], year: "2024 · 2025", status: "Mentor and speaker",
     title: "Student Mentorship & Academic Experience Sharing — Business Analytics",
-    affiliation: "Orientation Day for the 69th and 70th cohorts · HUST", image: "assets/activities/images/business-analytics-mentorship-representative.jpg", fit: "cover",
+    affiliation: "Orientation Day for the 69th and 70th cohorts · HUST", image: "assets/activities/images/orientation-day-group-photo.png", fit: "cover",
     alt: "Sharing experience with junior Business Analytics students",
     excerpt: "Drawing on my experiences through “thick and thin,” I shared activities to help juniors make the most of their four years at HUST.",
     description: [
@@ -288,7 +288,7 @@ const activityGalleries = {
     { src: "assets/activities/images/orientation-day-k70-poster.jpg", alt: "Orientation Day poster for the 70th cohort", fit: "contain" },
     { src: "assets/activities/images/orientation-day-k69-audience.jpg", alt: "Audience at a Business Analytics orientation event", fit: "cover" },
     { src: "assets/activities/images/mentorship-introduction-poster.jpg", alt: "Student introduction poster used at the event", fit: "contain" },
-    { src: "assets/activities/images/orientation-day-group-photo.png", alt: "Business Analytics students at Orientation Day", fit: "cover" }
+    { src: "assets/activities/images/business-analytics-mentorship-representative.jpg", alt: "Business Analytics students at Orientation Day", fit: "cover" }
   ],
   "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data": [
     { src: "assets/activities/images/fintech-thesis-research-discussion.jpg", alt: "Fintech thesis discussion with fellow researchers", fit: "cover" },
