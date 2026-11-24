@@ -22,8 +22,8 @@ function renderPortfolio(){
         <button class="activity-image" type="button" data-certificate="${escapeHtml(activity.image)}" data-title="${escapeHtml(activity.title)}" aria-label="View image: ${escapeHtml(activity.title)}"><img class="activity-thumb ${activity.fit==='contain'?'contain':''}" src="${escapeHtml(activity.image)}" alt="${escapeHtml(activity.alt)}" loading="lazy"/></button>
         <div class="activity-body"><div class="activity-meta"><span class="activity-type">${escapeHtml(activity.category)}</span><span>${escapeHtml(activity.year)}</span><span class="activity-status">${escapeHtml(activity.status)}</span></div>
           <h3>${escapeHtml(activity.title)}</h3><p class="activity-affiliation">${escapeHtml(activity.affiliation)}</p><p class="activity-excerpt">${escapeHtml(activity.excerpt)}</p>
-          <details class="activity-details"><summary>My full story</summary><div class="activity-full">${descriptions}${gallerySection}</div></details>${links?`<div class="activity-links">${links}</div>`:''}
-        </div></article>`;
+          ${links?`<div class="activity-links">${links}</div>`:''}
+        </div><details class="activity-details"><summary>My full story</summary><div class="activity-full">${descriptions}${gallerySection}</div></details></article>`;
     }).join('');
     return `<section class="activity-group" data-group="${escapeHtml(category)}" aria-labelledby="group-${category.toLowerCase().replaceAll(' ','-')}"><header class="activity-group-heading"><h2 id="group-${category.toLowerCase().replaceAll(' ','-')}">${escapeHtml(category)}</h2><span>${notes[category]}</span></header><div class="activity-list">${entries}</div></section>`;
   }).join('');

@@ -2,7 +2,7 @@ window.portfolioActivities = [
   {
     category: "Research", years: ["2024"], year: "2024", status: "Conference presentation · Third Prize",
     title: "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
-    affiliation: "National Economics University · SEM–HUST", image: "assets/activities/representative/fintech-index-review.jpg", fit: "cover",
+    affiliation: "National Economics University · SEM–HUST", image: "assets/activities/images/fintech-index-review-representative.jpg", fit: "cover",
     alt: "Research team presenting its fintech index study",
     excerpt: "We collected 227 research publications from Scopus and applied text preprocessing, TF-IDF, SVM classification, and LDA topic modeling to identify research patterns.",
     description: [
@@ -21,7 +21,7 @@ window.portfolioActivities = [
   {
     category: "Research", years: ["2024", "2025"], year: "2024–2025", status: "Outstanding Investment Research",
     title: "Equity Research & Financial Forecasting — CFA Institute Research Challenge",
-    affiliation: "CFA Institute Research Challenge in Vietnam", image: "assets/activities/representative/cfa-research.jpg", fit: "contain",
+    affiliation: "CFA Institute Research Challenge in Vietnam", image: "assets/activities/images/cfa-research-representative.jpg", fit: "contain",
     alt: "Excerpt from the team’s SSI Securities equity research report",
     excerpt: "Our team conducted equity research on SSI Securities Corporation, analyzing its business model, financial statements, and competitive position.",
     description: [
@@ -34,7 +34,7 @@ window.portfolioActivities = [
   {
     category: "Research", years: ["2023"], year: "2023", status: "Student Research Conference",
     title: "Quantitative Research on Student Academic Performance — SPSS",
-    affiliation: "Hanoi University of Science and Technology", image: "assets/activities/representative/student-academic-performance.jpg", fit: "contain",
+    affiliation: "Hanoi University of Science and Technology", image: "assets/activities/images/student-academic-performance-representative.jpg", fit: "contain",
     alt: "Research poster on emotional intelligence, resilience, engagement, and academic performance",
     excerpt: "Our team studied emotional intelligence, resilience, engagement, and academic performance using survey data from 249 HUST students.",
     description: [
@@ -47,7 +47,7 @@ window.portfolioActivities = [
   {
     category: "Research", years: ["2025"], year: "2025", status: "Thesis presented at an international conference",
     title: "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
-    affiliation: "Business Dynamics in Emerging Economy conference", image: "assets/activities/representative/fintech-thesis.jpg", fit: "cover",
+    affiliation: "Business Dynamics in Emerging Economy conference", image: "assets/activities/images/fintech-thesis-representative.jpg", fit: "cover",
     alt: "Conference group at Business Dynamics in Emerging Economy 2025",
     excerpt: "Using LDA and BERTopic, our research explored how fintech services in Vietnam have evolved through patterns in financial news coverage.",
     description: [
@@ -59,7 +59,7 @@ window.portfolioActivities = [
   {
     category: "Projects", years: ["2026"], year: "2026", status: "Data management contribution",
     title: "Scholarship Data Management for Children with Disabilities",
-    affiliation: "Vietnam Fund for Children with Disabilities", image: "assets/activities/representative/scholarship-data-management.jpg", fit: "contain",
+    affiliation: "Vietnam Fund for Children with Disabilities", image: "assets/activities/images/scholarship-data-management-representative.jpg", fit: "contain",
     alt: "Certificate recognizing data management contribution",
     excerpt: "I consolidated and cleaned 2,133 scholarship beneficiary records from 2024 and 2025 using Python and Excel for standardization, reconciliation, and cross-validation.",
     description: [
@@ -73,7 +73,7 @@ window.portfolioActivities = [
   {
     category: "Projects", years: ["2025"], year: "2025", status: "Data analyst internship",
     title: "Higher Education Admissions Analytics",
-    affiliation: "LEAD Consulting · HUST School of Economics and Management", image: "assets/activities/representative/admissions-analytics.jpg", fit: "contain",
+    affiliation: "LEAD Consulting · HUST School of Economics and Management", image: "assets/activities/images/admissions-analytics-representative.jpg", fit: "contain",
     alt: "Data analyst internship certificate from LEAD Consulting",
     excerpt: "During my first internship, I cleaned and analyzed higher-education admissions data in Vietnam.",
     description: [
@@ -86,7 +86,7 @@ window.portfolioActivities = [
   {
     category: "Projects", years: ["2025"], year: "2025", status: "Workshop project",
     title: "Marketing Analytics & Advanced Tableau Visualization",
-    affiliation: "LEAD Consulting", image: "assets/activities/representative/tableau-marketing-analytics.jpg", fit: "contain",
+    affiliation: "LEAD Consulting", image: "assets/activities/images/tableau-marketing-analytics-representative.jpg", fit: "contain",
     alt: "Tableau dashboard and market analysis visuals from a retail marketing project",
     excerpt: "Throughout three weeks of workshops and practice, we aimed to use visualization to close the gap between raw data and executive-level dashboards in the retail industry.",
     description: [
@@ -99,7 +99,7 @@ window.portfolioActivities = [
   {
     category: "Projects", years: [], year: "Date not specified", status: "Architecture proposal",
     title: "AI-Embedded Healthcare Data Platform",
-    affiliation: "Hospital data integration architecture", image: "assets/activities/representative/healthcare-data-platform.jpg", fit: "contain",
+    affiliation: "Hospital data integration architecture", image: "assets/activities/images/healthcare-data-platform-representative.jpg", fit: "contain",
     alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform",
     excerpt: "I explored a shared integration layer for fragmented hospital systems, using HL7 FHIR, OMOP CDM, and a Bronze–Silver–Gold data model to prepare reliable data for analytics and research.",
     description: [
@@ -112,7 +112,7 @@ window.portfolioActivities = [
   {
     category: "Projects", years: [], year: "Date not specified", status: "Independent project concept",
     title: "Project Fintech Intelligent Platform",
-    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/representative/fintech-intelligent-platform.jpg", fit: "contain",
+    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/images/fintech-intelligent-platform-representative.jpg", fit: "contain",
     alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications",
     excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
     description: [
@@ -125,7 +125,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2026"], year: "2026", status: "Course completed",
     title: "Deep Learning, LLMs & Retrieval-Augmented Generation — VIASM",
-    affiliation: "Vietnam Institute for Advanced Study in Mathematics · Banking Academy of Vietnam", image: "assets/activities/representative/llm-rag-course.jpg", fit: "contain",
+    affiliation: "Vietnam Institute for Advanced Study in Mathematics · Banking Academy of Vietnam", image: "assets/activities/images/llm-rag-course-representative.jpg", fit: "contain",
     alt: "Certificate of participation in an LLM and RAG course",
     excerpt: "The course moved from manually calculating backpropagation on day one to building applications with LLMs during the final two days.",
     description: [
@@ -136,7 +136,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2023"], year: "2023", status: "Participant",
     title: "First Business Case Competition — Managerial Accounting Mastermind 2023",
-    affiliation: "HUST School of Economics and Management", image: "assets/activities/representative/managerial-accounting-2023.jpg", fit: "contain",
+    affiliation: "HUST School of Economics and Management", image: "assets/activities/images/managerial-accounting-2023-representative.jpg", fit: "contain",
     alt: "Certificate of participation in Managerial Accounting Mastermind 2023",
     excerpt: "We formed a team of sophomores from among our classmates. This was the first time we had worked on a business case.",
     description: ["We formed a team of sophomores from among our classmates. This was the first time we had worked on a business case. It introduced me to framing an unfamiliar business problem, working through it with a team, and presenting a solution."],
@@ -145,7 +145,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2024"], year: "2024", status: "Champion",
     title: "Business Case Analysis & Problem-Solving — Managerial Accounting Mastermind",
-    affiliation: "HUST School of Economics and Management", image: "assets/activities/representative/managerial-accounting-champion.png", fit: "cover",
+    affiliation: "HUST School of Economics and Management", image: "assets/activities/images/managerial-accounting-champion-representative.png", fit: "cover",
     alt: "Team celebrating its Managerial Accounting Mastermind 2024 championship",
     excerpt: "Our team won the Managerial Accounting Mastermind 2024. We examined operational pain points and prioritized possible solutions using an Impact–Feasibility Matrix.",
     description: [
@@ -156,7 +156,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2023", "2024"], year: "2023–2024", status: "Training completed",
     title: "Enterprise Resource Planning & Business Process Integration — SAP S/4HANA",
-    affiliation: "SAP University Alliances", image: "assets/activities/representative/sap-s4hana-training.jpg", fit: "contain",
+    affiliation: "SAP University Alliances", image: "assets/activities/images/sap-s4hana-training-representative.jpg", fit: "contain",
     alt: "Certificate of participation in SAP S/4HANA training",
     excerpt: "Through practical exercises, I explored how business transactions connect across departments, from purchase orders and goods receipts to inventory, sales orders, and invoices.",
     description: [
@@ -168,7 +168,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2024"], year: "2024", status: "Six course certificates",
     title: "Google Data Analytics & Business Intelligence Training",
-    affiliation: "Google · Coursera", image: "assets/activities/representative/google-data-analytics-bi.jpg", fit: "contain",
+    affiliation: "Google · Coursera", image: "assets/activities/images/google-data-analytics-bi-representative.jpg", fit: "contain",
     alt: "Google and Coursera certificate for Decisions, Decisions: Dashboards and Reports",
     excerpt: "A set of Google courses introduced me to foundational data analyst concepts and helped me understand how Google engineers plan their days while working with customers, technical tools, and executive boards.",
     description: [
@@ -187,7 +187,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2024", "2025"], year: "2024 · 2025", status: "Mentor and speaker",
     title: "Student Mentorship & Academic Experience Sharing — Business Analytics",
-    affiliation: "Orientation Day for the 69th and 70th cohorts · HUST", image: "assets/activities/representative/business-analytics-mentorship.jpg", fit: "cover",
+    affiliation: "Orientation Day for the 69th and 70th cohorts · HUST", image: "assets/activities/images/business-analytics-mentorship-representative.jpg", fit: "cover",
     alt: "Sharing experience with junior Business Analytics students",
     excerpt: "Drawing on my experiences through “thick and thin,” I shared activities to help juniors make the most of their four years at HUST.",
     description: [
@@ -199,7 +199,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2024"], year: "2024", status: "Case competition",
     title: "International Corporate Taxation & Compliance Case Competition",
-    affiliation: "13 October 2024", image: "assets/activities/representative/corporate-tax-competition.jpg", fit: "cover",
+    affiliation: "13 October 2024", image: "assets/activities/images/corporate-tax-competition-representative.jpg", fit: "cover",
     alt: "Participants reviewing materials at an international corporate tax case competition",
     excerpt: "I worked on corporate tax problems involving international double taxation, transfer pricing, BEPS, and the Global Minimum Tax.",
     description: [
@@ -210,7 +210,7 @@ window.portfolioActivities = [
   {
     category: "Other Activities", years: ["2024"], year: "2024", status: "Business challenge participant",
     title: "Business Case Consulting — ICAEW Vietnam Business Challenge",
-    affiliation: "Deloitte · ICAEW Vietnam", image: "assets/activities/representative/icaew-business-challenge.jpg", fit: "cover",
+    affiliation: "Deloitte · ICAEW Vietnam", image: "assets/activities/images/icaew-business-challenge-representative.jpg", fit: "cover",
     alt: "Team at the ICAEW Vietnam Business Challenge 2024",
     excerpt: "We learned how consultants transform an unfamiliar customer problem into a structured problem-solving journey, using frameworks such as MECE, Fishbone, SWOT, Porter’s Five Forces, and BCG.",
     description: [
@@ -251,61 +251,61 @@ window.portfolioActivities = [
 
 const activityGalleries = {
   "AI-Embedded Healthcare Data Platform": [
-    { src: "assets/activities/representative/healthcare-data-platform.jpg", alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform", fit: "contain" }
+    { src: "assets/activities/images/healthcare-data-platform-representative.jpg", alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform", fit: "contain" }
   ],
   "Project Fintech Intelligent Platform": [
-    { src: "assets/activities/representative/fintech-intelligent-platform.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications", fit: "contain" }
+    { src: "assets/activities/images/fintech-intelligent-platform-representative.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications", fit: "contain" }
   ],
   "Marketing Analytics & Advanced Tableau Visualization": [
-    { src: "assets/activities/gallery/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
-    { src: "assets/activities/gallery/tableau-retail-analysis-view-1.jpg", alt: "First Tableau retail analysis view", fit: "contain" },
-    { src: "assets/activities/gallery/tableau-retail-analysis-view-2.jpg", alt: "Second Tableau retail analysis view", fit: "contain" }
+    { src: "assets/activities/images/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
+    { src: "assets/activities/images/tableau-retail-analysis-view-1.jpg", alt: "First Tableau retail analysis view", fit: "contain" },
+    { src: "assets/activities/images/tableau-retail-analysis-view-2.jpg", alt: "Second Tableau retail analysis view", fit: "contain" }
   ],
   "Business Case Analysis & Problem-Solving — Managerial Accounting Mastermind": [
-    { src: "assets/activities/gallery/managerial-accounting-2024-certificate.jpg", alt: "Champion certificate for Managerial Accounting Mastermind 2024", fit: "contain" }
+    { src: "assets/activities/images/managerial-accounting-2024-certificate.jpg", alt: "Champion certificate for Managerial Accounting Mastermind 2024", fit: "contain" }
   ],
   "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies": [
-    { src: "assets/activities/gallery/fintech-index-research-certificate-1.jpg", alt: "Certificate related to the fintech index research", fit: "contain" },
-    { src: "assets/activities/gallery/fintech-index-research-certificate-2.jpg", alt: "Research presentation certificate", fit: "contain" },
-    { src: "assets/activities/gallery/fintech-index-research-certificate-3.jpg", alt: "Student research award certificate", fit: "contain" }
+    { src: "assets/activities/images/fintech-index-research-certificate-1.jpg", alt: "Certificate related to the fintech index research", fit: "contain" },
+    { src: "assets/activities/images/fintech-index-research-certificate-2.jpg", alt: "Research presentation certificate", fit: "contain" },
+    { src: "assets/activities/images/fintech-index-research-certificate-3.jpg", alt: "Student research award certificate", fit: "contain" }
   ],
   "Equity Research & Financial Forecasting — CFA Institute Research Challenge": [
-    { src: "assets/activities/gallery/cfa-research-challenge-certificate.jpg", alt: "CFA Institute Research Challenge certificate", fit: "contain" },
-    { src: "assets/activities/gallery/cfa-report-page-3.jpg", alt: "Additional page from the SSI Securities research report", fit: "contain" },
-    { src: "assets/activities/gallery/cfa-report-page-16.jpg", alt: "Financial analysis page from the SSI Securities research report", fit: "contain" }
+    { src: "assets/activities/images/cfa-research-challenge-certificate.jpg", alt: "CFA Institute Research Challenge certificate", fit: "contain" },
+    { src: "assets/activities/images/cfa-report-page-3.jpg", alt: "Additional page from the SSI Securities research report", fit: "contain" },
+    { src: "assets/activities/images/cfa-report-page-16.jpg", alt: "Financial analysis page from the SSI Securities research report", fit: "contain" }
   ],
   "Quantitative Research on Student Academic Performance — SPSS": [
-    { src: "assets/activities/gallery/academic-performance-research-certificate.jpg", alt: "Student research conference certificate", fit: "contain" }
+    { src: "assets/activities/images/academic-performance-research-certificate.jpg", alt: "Student research conference certificate", fit: "contain" }
   ],
   "Google Data Analytics & Business Intelligence Training": [
-    { src: "assets/activities/gallery/google-data-models-and-pipelines.jpg", alt: "Google certificate for Data Models and Pipelines", fit: "contain" },
-    { src: "assets/activities/gallery/google-business-intelligence.jpg", alt: "Google certificate for Business Intelligence", fit: "contain" },
-    { src: "assets/activities/gallery/google-prepare-data-for-exploration.jpg", alt: "Google certificate for Prepare Data for Exploration", fit: "contain" },
-    { src: "assets/activities/gallery/google-data-driven-decisions.jpg", alt: "Google certificate for Data-Driven Decisions", fit: "contain" },
-    { src: "assets/activities/gallery/google-foundations-data-everywhere.jpg", alt: "Google certificate for Foundations: Data, Data, Everywhere", fit: "contain" }
+    { src: "assets/activities/images/google-data-models-and-pipelines.jpg", alt: "Google certificate for Data Models and Pipelines", fit: "contain" },
+    { src: "assets/activities/images/google-business-intelligence.jpg", alt: "Google certificate for Business Intelligence", fit: "contain" },
+    { src: "assets/activities/images/google-prepare-data-for-exploration.jpg", alt: "Google certificate for Prepare Data for Exploration", fit: "contain" },
+    { src: "assets/activities/images/google-data-driven-decisions.jpg", alt: "Google certificate for Data-Driven Decisions", fit: "contain" },
+    { src: "assets/activities/images/google-foundations-data-everywhere.jpg", alt: "Google certificate for Foundations: Data, Data, Everywhere", fit: "contain" }
   ],
   "Student Mentorship & Academic Experience Sharing — Business Analytics": [
-    { src: "assets/activities/gallery/orientation-day-k70-poster.jpg", alt: "Orientation Day poster for the 70th cohort", fit: "contain" },
-    { src: "assets/activities/gallery/orientation-day-k69-audience.jpg", alt: "Audience at a Business Analytics orientation event", fit: "cover" },
-    { src: "assets/activities/gallery/mentorship-introduction-poster.jpg", alt: "Student introduction poster used at the event", fit: "contain" },
-    { src: "assets/activities/gallery/orientation-day-group-photo.png", alt: "Business Analytics students at Orientation Day", fit: "cover" }
+    { src: "assets/activities/images/orientation-day-k70-poster.jpg", alt: "Orientation Day poster for the 70th cohort", fit: "contain" },
+    { src: "assets/activities/images/orientation-day-k69-audience.jpg", alt: "Audience at a Business Analytics orientation event", fit: "cover" },
+    { src: "assets/activities/images/mentorship-introduction-poster.jpg", alt: "Student introduction poster used at the event", fit: "contain" },
+    { src: "assets/activities/images/orientation-day-group-photo.png", alt: "Business Analytics students at Orientation Day", fit: "cover" }
   ],
   "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data": [
-    { src: "assets/activities/gallery/fintech-thesis-research-discussion.jpg", alt: "Fintech thesis discussion with fellow researchers", fit: "cover" },
-    { src: "assets/activities/gallery/fintech-thesis-conference-discussion.jpg", alt: "Conference discussion about the fintech research", fit: "cover" },
-    { src: "assets/activities/gallery/fintech-thesis-presentation.jpg", alt: "Presenting findings from the fintech thesis", fit: "cover" },
-    { src: "assets/activities/gallery/fintech-thesis-panel-session.jpg", alt: "Fintech research session at the conference", fit: "cover" },
-    { src: "assets/activities/gallery/fintech-thesis-conference-visit.jpg", alt: "Conference visit with the research team", fit: "cover" },
-    { src: "assets/activities/gallery/fintech-thesis-methods-infographic.png", alt: "Visual summary of the fintech text-mining research", fit: "contain" }
+    { src: "assets/activities/images/fintech-thesis-research-discussion.jpg", alt: "Fintech thesis discussion with fellow researchers", fit: "cover" },
+    { src: "assets/activities/images/fintech-thesis-conference-discussion.jpg", alt: "Conference discussion about the fintech research", fit: "cover" },
+    { src: "assets/activities/images/fintech-thesis-presentation.jpg", alt: "Presenting findings from the fintech thesis", fit: "cover" },
+    { src: "assets/activities/images/fintech-thesis-panel-session.jpg", alt: "Fintech research session at the conference", fit: "cover" },
+    { src: "assets/activities/images/fintech-thesis-conference-visit.jpg", alt: "Conference visit with the research team", fit: "cover" },
+    { src: "assets/activities/images/fintech-thesis-methods-infographic.png", alt: "Visual summary of the fintech text-mining research", fit: "contain" }
   ],
   "International Corporate Taxation & Compliance Case Competition": [
-    { src: "assets/activities/gallery/tax-competition-announcement.png", alt: "Competition information and tax case materials", fit: "contain" },
-    { src: "assets/activities/gallery/tax-team-discussion.jpg", alt: "Team reviewing the corporate tax case", fit: "cover" },
-    { src: "assets/activities/gallery/tax-competition-ceremony.jpg", alt: "Participants at the corporate tax competition ceremony", fit: "cover" }
+    { src: "assets/activities/images/tax-competition-announcement.png", alt: "Competition information and tax case materials", fit: "contain" },
+    { src: "assets/activities/images/tax-team-discussion.jpg", alt: "Team reviewing the corporate tax case", fit: "cover" },
+    { src: "assets/activities/images/tax-competition-ceremony.jpg", alt: "Participants at the corporate tax competition ceremony", fit: "cover" }
   ],
   "Business Case Consulting — ICAEW Vietnam Business Challenge": [
-    { src: "assets/activities/gallery/icaew-case-discussion.jpg", alt: "Team discussing the ICAEW business case", fit: "cover" },
-    { src: "assets/activities/gallery/icaew-award-ceremony.jpg", alt: "Team at the ICAEW Vietnam Business Challenge ceremony", fit: "cover" }
+    { src: "assets/activities/images/icaew-case-discussion.jpg", alt: "Team discussing the ICAEW business case", fit: "cover" },
+    { src: "assets/activities/images/icaew-award-ceremony.jpg", alt: "Team at the ICAEW Vietnam Business Challenge ceremony", fit: "cover" }
   ]
 };
 
