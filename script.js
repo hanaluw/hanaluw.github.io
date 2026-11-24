@@ -24,7 +24,7 @@ function renderPortfolio(){
       const descriptions=activity.description.map(text=>`<p>${formatHighlightedText(text,activity.highlights)}</p>`).join('');
       const links=activity.links.map(link=>`<a href="${escapeHtml(link.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)} <span aria-hidden="true">↗</span></a>`).join('');
       const skills=(activity.skills||[]).map(skill=>`<span>${escapeHtml(skill)}</span>`).join('');
-      const gallery=activity.gallery.map((image,index)=>`<div class="activity-gallery-slide"${index?' hidden':''}><button class="activity-gallery-image" type="button" data-certificate="${escapeHtml(image.src)}" data-title="${escapeHtml(image.alt)}" aria-label="View image: ${escapeHtml(image.alt)}"><img class="${image.fit==='contain'?'contain':''}" src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy"/></button></div>`).join('');
+      const gallery=activity.gallery.map((image,index)=>`<div class="activity-gallery-slide"${index>=3?' hidden':''}><button class="activity-gallery-image" type="button" data-certificate="${escapeHtml(image.src)}" data-title="${escapeHtml(image.alt)}" aria-label="View image: ${escapeHtml(image.alt)}"><img class="${image.fit==='contain'?'contain':''}" src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy"/></button></div>`).join('');
       const galleryNav=activity.gallery.length>1?`<button class="activity-gallery-nav" type="button" data-gallery-prev aria-label="Previous image">‹</button>`:'';
       const galleryNext=activity.gallery.length>1?`<button class="activity-gallery-nav" type="button" data-gallery-next aria-label="Next image">›</button>`:'';
       const gallerySection=gallery?`<div class="activity-gallery" data-gallery>${galleryNav}<div class="activity-gallery-stage" aria-live="polite">${gallery}</div>${galleryNext}</div>`:'';
@@ -41,13 +41,22 @@ renderPortfolio();
 
 for(const gallery of document.querySelectorAll('[data-gallery]')){
   const slides=[...gallery.querySelectorAll('.activity-gallery-slide')];
+  const previous=gallery.querySelector('[data-gallery-prev]');
+  const next=gallery.querySelector('[data-gallery-next]');
+  const mobileView=window.matchMedia('(max-width:700px)');
   let current=0;
-  const showSlide=index=>{
-    current=(index+slides.length)%slides.length;
-    slides.forEach((slide,slideIndex)=>slide.hidden=slideIndex!==current);
+  const showSlides=index=>{
+    const visibleCount=Math.min(slides.length,mobileView.matches?1:3);
+    const lastStart=slides.length-visibleCount;
+    current=Math.max(0,Math.min(index,lastStart));
+    slides.forEach((slide,slideIndex)=>slide.hidden=slideIndex<current||slideIndex>=current+visibleCount);
+    if(previous){previous.hidden=lastStart===0;previous.disabled=current===0}
+    if(next){next.hidden=lastStart===0;next.disabled=current===lastStart}
   };
-  gallery.querySelector('[data-gallery-prev]')?.addEventListener('click',()=>showSlide(current-1));
-  gallery.querySelector('[data-gallery-next]')?.addEventListener('click',()=>showSlide(current+1));
+  previous?.addEventListener('click',()=>showSlides(current-1));
+  next?.addEventListener('click',()=>showSlides(current+1));
+  mobileView.addEventListener('change',()=>showSlides(current));
+  showSlides(0);
 }
 
 const certificateDialog=document.querySelector('#certificate-dialog');
