@@ -1,142 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Han Gia Luu | AI Researcher</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Times New Roman",Times,serif;color:#39383A;background:#DEACAA;line-height:1.5}
-a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
-.container{width:min(1120px,90%);margin:auto}
-nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;font-size:16px}
-.nav-name{font-weight:bold;letter-spacing:.03em}.nav-links{display:flex;gap:28px}
-.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding:70px 0 100px}
-.hero-label{font-size:15px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:25px}
-.hero h1{font-size:clamp(64px,11vw,150px);line-height:.88;font-weight:normal;letter-spacing:-.055em}
-.hero-subtitle{margin-top:42px;font-size:clamp(22px,3vw,34px);max-width:760px;line-height:1.2}
-.hero-actions{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
-.button{display:inline-block;padding:9px 18px;border:1px solid #39383A;background:#E8DDD1;transition:.2s}
-.button:hover{background:#DBBFBF;text-decoration:none}
-section{padding:110px 0}.section-number{font-size:14px;letter-spacing:.12em;margin-bottom:12px}
-.section-title{font-size:clamp(42px,6vw,78px);font-weight:normal;line-height:1;margin-bottom:55px}
-.about{background:#EBE5E0}.about-text{max-width:760px;font-size:clamp(24px,3vw,36px);line-height:1.3}
-.about-text p+p{margin-top:30px}.dreamy{font-size:.9em}
-.exploring{background:#E8DDD1}.exploring-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #39383A;border-left:1px solid #39383A}
-.exploring-item{min-height:220px;padding:30px;border-right:1px solid #39383A;border-bottom:1px solid #39383A}
-.exploring-item h3{font-size:25px;font-weight:normal;margin-bottom:25px}.exploring-item p{font-size:18px;line-height:1.7}
-.work{background:#DEACAA}.project{display:grid;grid-template-columns:90px 1fr auto;gap:30px;padding:35px 0;border-top:1px solid #39383A;align-items:start}
-.project:last-child{border-bottom:1px solid #39383A}.project-number{font-size:18px}.project h3{font-size:clamp(28px,4vw,48px);font-weight:normal;line-height:1;margin-bottom:15px}
-.project-description{max-width:650px;font-size:18px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.tag{padding:5px 10px;background:#EBE5E0;border:1px solid #DBBFBF;font-size:14px}
-.project-link{font-size:15px;white-space:nowrap;padding-top:8px}.journey{background:#EBE5E0}.timeline{border-left:1px solid #39383A}
-.timeline-item{display:grid;grid-template-columns:150px 1fr;padding:28px 0 28px 30px;border-bottom:1px solid #DBBFBF;position:relative}
-.timeline-item:before{content:"";width:10px;height:10px;background:#39383A;border-radius:50%;position:absolute;left:-5px;top:35px}
-.timeline-year{font-size:18px}.timeline-content h3{font-size:27px;font-weight:normal;margin-bottom:5px}.timeline-content p{font-size:17px}
-.experience{background:#E8DDD1}.experience-item{padding:35px 0;border-top:1px solid #39383A}.experience-item:last-child{border-bottom:1px solid #39383A}
-.experience-header{display:flex;justify-content:space-between;gap:30px}.experience-header h3{font-size:34px;font-weight:normal}
-.experience-date{font-size:17px;white-space:nowrap}.experience-role{font-size:19px;margin-top:5px}.experience-description{margin-top:18px;font-size:17px;max-width:800px}
-.education{background:#DEACAA}.education-main{display:grid;grid-template-columns:1fr 1fr;gap:60px}.education-block h3{font-size:32px;font-weight:normal;margin-bottom:8px}.education-block p{font-size:18px}
-.thesis{margin-top:25px;padding:25px;background:#DBBFBF;border:1px solid #39383A}.thesis-label{font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}.thesis-title{font-size:21px}
-.publications{background:#EBE5E0}.publication{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:30px 0;border-top:1px solid #39383A}.publication:last-child{border-bottom:1px solid #39383A}
-.publication-type{font-size:15px;letter-spacing:.08em;text-transform:uppercase}.publication h3{font-size:25px;font-weight:normal;margin-bottom:8px}.publication p{font-size:17px}
-.contact{min-height:65vh;display:flex;align-items:center;background:#DEACAA}.contact-title{font-size:clamp(60px,10vw,130px);font-weight:normal;line-height:.9;letter-spacing:-.05em}
-.contact-subtitle{font-size:22px;margin-top:35px;max-width:600px}.contact-links{display:flex;gap:25px;flex-wrap:wrap;margin-top:35px;font-size:18px}
-footer{padding:25px 0;border-top:1px solid #39383A;font-size:14px;display:flex;justify-content:space-between}
-@media(max-width:760px){
-.container{width:88%}nav{align-items:flex-start}.nav-links{gap:12px;font-size:14px}.hero{min-height:70vh;padding-top:40px}
-.hero h1{font-size:clamp(58px,17vw,100px)}section{padding:75px 0}.exploring-grid{grid-template-columns:1fr}
-.project{grid-template-columns:45px 1fr;gap:15px}.project-link{grid-column:2}.timeline-item{grid-template-columns:100px 1fr}
-.experience-header{flex-direction:column;gap:5px}.education-main{grid-template-columns:1fr}.publication{grid-template-columns:1fr;gap:10px}
-footer{flex-direction:column;gap:8px}
-}
-</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#fff4f8" name="theme-color"/>
+<meta content="Gia-Han Luu: business analytics, health informatics, and applied NLP." name="description"/>
+<title>Gia-Han Luu · Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
 </head>
 <body>
-<div class="container">
-<nav>
-<a href="#" class="nav-name">HAN GIA LUU</a>
-<div class="nav-links">
-<a href="#about">about</a><a href="#work">work</a><a href="#research">research</a><a href="#contact">contact</a>
-</div>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Home" class="brand" href="#home"><strong>GIA-HAN LUU</strong><em>a curious mind, a personal corner</em></a>
+<nav aria-label="Main navigation" class="main-nav">
+<a data-page="home" href="#home">Home</a>
+<a data-page="portfolio" href="#portfolio">Portfolio</a>
+<a data-page="library" href="#library">Book library</a>
+<a data-page="music" href="#music">Music</a>
 </nav>
-<header class="hero">
-<div class="hero-label">AI Researcher · NLP · Large Language Models</div>
-<h1>HAN<br>GIA LUU</h1>
-<p class="hero-subtitle">From data and digital transformation to language understanding and knowledge representation.</p>
-<div class="hero-actions">
-<a href="#research" class="button">Research</a><a href="#work" class="button">Projects</a><a href="https://github.com/hanaluw" class="button">GitHub</a>
 </div>
 </header>
+<main id="app">
+<section aria-labelledby="home-title" class="page cv-page" id="home">
+<div class="container cv-sheet">
+<header class="cv-header">
+<div aria-hidden="true" class="cv-monogram">GL</div>
+<div class="cv-identity">
+<p class="cv-kicker">ACADEMIC &amp; PROFESSIONAL CV</p>
+<h1 id="home-title">GIA-HAN LUU</h1>
+<p class="cv-role">Business Analytics · Health Informatics · Applied NLP</p>
+<p class="cv-location">Hanoi, Vietnam</p>
 </div>
-
-<section class="about" id="about"><div class="container">
-<div class="section-number">01</div><h2 class="section-title">ABOUT</h2>
-<div class="about-text">
-<p>I love swimming and being a day dreamer. I also love learning how to learn and unlearn! <span class="dreamy">🐚 ☁️ 𓂃 ࣪˖ ִֶָ𐀔</span></p>
-<p>You can call me <strong>Hanna, Hanliu, Jia, 嘉欣, pumpkin, sugar, princess, sweetie...</strong> Through topic modeling methods, I’m 100% sure these all refer to me! <span class="dreamy">𓆩♡𓆪 ✧˖° ☾ ⋆｡˚ 🪽</span></p>
-</div></div></section>
-
-<section class="exploring" id="research"><div class="container">
-<div class="section-number">02</div><h2 class="section-title">CURRENTLY<br>EXPLORING</h2>
-<div class="exploring-grid">
-<div class="exploring-item"><h3>Natural Language Processing</h3><p>Information Extraction<br>Vietnamese NLP<br>LLM-assisted NLP</p></div>
-<div class="exploring-item"><h3>Knowledge Representation</h3><p>Knowledge Graphs<br>Entity &amp; Relation Modeling<br>Temporal Information</p></div>
-<div class="exploring-item"><h3>AI Systems</h3><p>Graph-RAG<br>Retrieval<br>Multi-step Reasoning</p></div>
-</div></div></section>
-
-<section class="work" id="work"><div class="container">
-<div class="section-number">03</div><h2 class="section-title">SELECTED<br>WORK</h2>
-
-<article class="project"><div class="project-number">01</div><div><h3>Financial Event Extraction</h3><p class="project-description">LLM-assisted extraction of structured financial events and entities from Vietnamese financial news.</p><div class="tags"><span class="tag">NLP</span><span class="tag">LLM</span><span class="tag">Information Extraction</span><span class="tag">Vietnamese</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
-
-<article class="project"><div class="project-number">02</div><div><h3>Vietnamese FinTech Text Mining</h3><p class="project-description">A text-mining study of Vietnamese financial news using BERT-based models and topic modeling to examine the evolution of FinTech services.</p><div class="tags"><span class="tag">BERT</span><span class="tag">LDA</span><span class="tag">BERTopic</span><span class="tag">HDBSCAN</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
-
-<article class="project"><div class="project-number">03</div><div><h3>FinTech Data Platform</h3><p class="project-description">A data pipeline for crawling, processing, storing, and preparing Vietnamese financial news for downstream NLP and knowledge extraction.</p><div class="tags"><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">Kafka</span><span class="tag">PostgreSQL</span><span class="tag">MinIO</span><span class="tag">Spark</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
-
-<article class="project"><div class="project-number">04</div><div><h3>Healthcare Data &amp; AI</h3><p class="project-description">Data architecture, governance, interoperability, and analytics for healthcare digital transformation.</p><div class="tags"><span class="tag">Data Architecture</span><span class="tag">FHIR</span><span class="tag">Data Governance</span><span class="tag">ETL</span></div></div><a href="#" class="project-link">VIEW PROJECT →</a></article>
+<div aria-label="Professional profiles" class="cv-links">
+<a href="https://www.linkedin.com/in/han-luu-gia" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://github.com/hanaluw" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+</div>
+</header>
+<div class="cv-content">
+<p class="cv-summary">Business Analytics graduate applying data engineering and NLP to health informatics and fintech research. Experienced in data governance, interoperable health data, and analytical pipelines.</p>
+<section aria-labelledby="cv-education" class="cv-section"><h2 id="cv-education">Education</h2><div class="cv-entry"><div class="cv-entry-head"><h3><img alt="Hanoi University of Science and Technology logo" class="hust-education-logo" height="39" src="assets/branding/hust-logo.png" width="26"/>Hanoi University of Science and Technology</h3><span>2021–2025</span></div><p class="cv-subline">Bachelor in Business Analytics · GPA 3.67/4.00</p><p>Thesis: <em>Understanding Fintech Services Evolution in Vietnam</em>; applied BERT-based classification and topic modeling to a 216 MB Vietnamese news dataset. <strong>Grade: 9.5/10.</strong></p></div></section>
+<section aria-labelledby="cv-experience" class="cv-section"><h2 id="cv-experience">Experience</h2><div class="cv-entry"><div class="cv-entry-head"><h3><img alt="LEAD Consulting logo" class="lead-consulting-logo" height="20" src="assets/branding/lead-consulting.png" width="88"/>LEAD Consulting</h3><span>Oct 2025–Present</span></div><p class="cv-subline">Business Analyst · Health Informatics Analyst</p><ul><li>Mapped a hospital inpatient database of <strong>16 tables and 150+ columns</strong> to HL7 FHIR and REST API resources, identifying data quality and structure issues.</li><li>Built governance and analytics foundations using <strong>OpenMetadata</strong>, SQL-based quality tests, ETL pipelines with <strong>PySpark</strong>, curated data models, and reporting dashboards.</li></ul></div><div class="cv-entry"><div class="cv-entry-head"><h3><img alt="LEAD Consulting logo" class="lead-consulting-logo" height="20" src="assets/branding/lead-consulting.png" width="88"/>LEAD Consulting</h3><span>Feb–May 2025</span></div><p class="cv-subline">Data Analyst Intern</p><ul><li>Redesigned the dashboard data model and ETL pipeline, reducing load time by <strong>60%</strong>. Connected live PostgreSQL and Google Sheets data to Tableau, Power BI, Apache Superset, and Looker dashboards; built Python sentiment analysis for customer reviews.</li></ul></div></section>
+<section aria-labelledby="cv-research" class="cv-section"><h2 id="cv-research">Selected research &amp; projects</h2><div class="cv-entry"><div class="cv-entry-head"><h3>Fintech News Crawler</h3><span>Project</span></div><p>Designed a pipeline for Vietnamese fintech news collection and downstream NLP using Python, Docker, Kafka, PostgreSQL, MinIO, and Spark SQL.</p></div><div class="cv-entry"><div class="cv-entry-head"><h3>Fintech development through composite indices</h3><span>2026 · Journal article</span></div><p>Co-author of a text-mining review in the <em>International Journal of Innovative Research and Scientific Studies</em>. <a href="https://doi.org/10.53894/ijirss.v9i6.11737" rel="noopener noreferrer" target="_blank">DOI: 10.53894/ijirss.v9i6.11737 ↗</a></p></div></section>
+<section aria-labelledby="cv-highlights" class="cv-section cv-highlights"><h2 id="cv-highlights">Additional impact</h2><ul><li>Cleaned and standardized <strong>2,133 scholarship records</strong> for an ethnic minority student program using Excel and Python.</li><li>Tutored <strong>160 students</strong> in Excel-based data analysis as a teaching assistant at HUST.</li><li><strong>IELTS 8.0</strong> (September 2025).</li></ul></section>
+<section aria-labelledby="cv-skills" class="cv-section cv-skills"><h2 id="cv-skills">Technical skills</h2><p><strong>Languages &amp; analysis:</strong> Python, R, SQL, Excel, SPSS</p><p><strong>Data &amp; visualization:</strong> ETL, PostgreSQL, PySpark, OpenMetadata, Tableau, Power BI, Apache Superset, Looker, Google Sheets</p></section>
+</div>
+</div>
+</section>
+<section aria-labelledby="journal-title" class="page" hidden="" id="portfolio">
+<div class="hero"><div class="container"><p class="eyebrow">PORTFOLIO</p><h1 id="journal-title">Certificates &amp; milestones.</h1><p class="hero-tagline">A record of learning, research, and work.</p><p class="hero-copy">Twenty-one certificates documenting learning, research, and work. Select a scan to see the full document.</p></div></div>
+<div class="container timeline certificate-timeline">
+<article class="timeline-row certificate-row"><div class="card credential"><h2>LLM and RAG for Document Analysis and Exploitation</h2><p>Vietnam Institute for Advanced Study in Mathematics and Banking Academy of Vietnam</p><p class="certificate-date"><time>30 October 2026</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: LLM and RAG for Document Analysis and Exploitation" class="certificate-open" data-certificate="assets/certificates/01-llm-and-rag-for-document-analysis-and-exploitation.jpg" data-title="LLM and RAG for Document Analysis and Exploitation" type="button"><img alt="Certificate scan: LLM and RAG for Document Analysis and Exploitation" loading="lazy" src="assets/certificates/01-llm-and-rag-for-document-analysis-and-exploitation.jpg"/><span>View full certificate</span></button></div></article><article class="timeline-row certificate-row"><div class="card credential"><h2>Decisions, Decisions: Dashboards and Reports</h2><p>Google · Coursera</p><p class="certificate-date"><time datetime="2024-04-28">28 April 2024</time></p><a class="certificate-pdf-link" href="assets/certificates/coursera/PU7ZJF8ZVK8K.pdf" rel="noopener noreferrer" target="_blank">Open original PDF</a></div><div class="certificate-preview"><button aria-label="View full certificate: Decisions, Decisions: Dashboards and Reports" class="certificate-open" data-certificate="assets/certificates/coursera/PU7ZJF8ZVK8K.jpg" data-title="Decisions, Decisions: Dashboards and Reports" type="button"><img alt="Certificate scan: Decisions, Decisions: Dashboards and Reports" loading="lazy" src="assets/certificates/coursera/PU7ZJF8ZVK8K.jpg"/><span>View full certificate</span></button></div></article><article class="timeline-row certificate-row"><div class="card credential"><h2>The Path to Insights: Data Models and Pipelines</h2><p>Google · Coursera</p><p class="certificate-date"><time datetime="2024-04-26">26 April 2024</time></p><a class="certificate-pdf-link" href="assets/certificates/coursera/FPMS8DMKG28P.pdf" rel="noopener noreferrer" target="_blank">Open original PDF</a></div><div class="certificate-preview"><button aria-label="View full certificate: The Path to Insights: Data Models and Pipelines" class="certificate-open" data-certificate="assets/certificates/coursera/FPMS8DMKG28P.jpg" data-title="The Path to Insights: Data Models and Pipelines" type="button"><img alt="Certificate scan: The Path to Insights: Data Models and Pipelines" loading="lazy" src="assets/certificates/coursera/FPMS8DMKG28P.jpg"/><span>View full certificate</span></button></div></article><article class="timeline-row certificate-row"><div class="card credential"><h2>Foundations of Business Intelligence</h2><p>Google · Coursera</p><p class="certificate-date"><time datetime="2024-04-25">25 April 2024</time></p><a class="certificate-pdf-link" href="assets/certificates/coursera/LFWMBPEWDR57.pdf" rel="noopener noreferrer" target="_blank">Open original PDF</a></div><div class="certificate-preview"><button aria-label="View full certificate: Foundations of Business Intelligence" class="certificate-open" data-certificate="assets/certificates/coursera/LFWMBPEWDR57.jpg" data-title="Foundations of Business Intelligence" type="button"><img alt="Certificate scan: Foundations of Business Intelligence" loading="lazy" src="assets/certificates/coursera/LFWMBPEWDR57.jpg"/><span>View full certificate</span></button></div></article><article class="timeline-row certificate-row"><div class="card credential"><h2>Prepare Data for Exploration</h2><p>Google · Coursera</p><p class="certificate-date"><time datetime="2024-04-23">23 April 2024</time></p><a class="certificate-pdf-link" href="assets/certificates/coursera/LXW6W9C8QX5K.pdf" rel="noopener noreferrer" target="_blank">Open original PDF</a></div><div class="certificate-preview"><button aria-label="View full certificate: Prepare Data for Exploration" class="certificate-open" data-certificate="assets/certificates/coursera/LXW6W9C8QX5K.jpg" data-title="Prepare Data for Exploration" type="button"><img alt="Certificate scan: Prepare Data for Exploration" loading="lazy" src="assets/certificates/coursera/LXW6W9C8QX5K.jpg"/><span>View full certificate</span></button></div></article><article class="timeline-row certificate-row"><div class="card credential"><h2>Ask Questions to Make Data-Driven Decisions</h2><p>Google · Coursera</p><p class="certificate-date"><time datetime="2024-04-14">14 April 2024</time></p><a class="certificate-pdf-link" href="assets/certificates/coursera/VM8L4M4D96YJ.pdf" rel="noopener noreferrer" target="_blank">Open original PDF</a></div><div class="certificate-preview"><button aria-label="View full certificate: Ask Questions to Make Data-Driven Decisions" class="certificate-open" data-certificate="assets/certificates/coursera/VM8L4M4D96YJ.jpg" data-title="Ask Questions to Make Data-Driven Decisions" type="button"><img alt="Certificate scan: Ask Questions to Make Data-Driven Decisions" loading="lazy" src="assets/certificates/coursera/VM8L4M4D96YJ.jpg"/><span>View full certificate</span></button></div></article><article class="timeline-row certificate-row"><div class="card credential"><h2>Foundations: Data, Data, Everywhere</h2><p>Google · Coursera</p><p class="certificate-date"><time datetime="2024-04-04">4 April 2024</time></p><a class="certificate-pdf-link" href="assets/certificates/coursera/WDL5BWLLJY46.pdf" rel="noopener noreferrer" target="_blank">Open original PDF</a></div><div class="certificate-preview"><button aria-label="View full certificate: Foundations: Data, Data, Everywhere" class="certificate-open" data-certificate="assets/certificates/coursera/WDL5BWLLJY46.jpg" data-title="Foundations: Data, Data, Everywhere" type="button"><img alt="Certificate scan: Foundations: Data, Data, Everywhere" loading="lazy" src="assets/certificates/coursera/WDL5BWLLJY46.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Data Management Contribution</h2><p>Vietnam Fund for Children with Disabilities</p><p class="certificate-date"><time>16 June 2026</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Data Management Contribution" class="certificate-open" data-certificate="assets/certificates/02-data-management-contribution.jpg" data-title="Data Management Contribution" type="button"><img alt="Certificate scan: Data Management Contribution" loading="lazy" src="assets/certificates/02-data-management-contribution.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>CFA Institute Research Challenge in Vietnam: Outstanding Investment Research</h2><p>CFA Institute</p><p class="certificate-date"><time>2024–2025</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: CFA Institute Research Challenge in Vietnam: Outstanding Investment Research" class="certificate-open" data-certificate="assets/certificates/03-cfa-institute-research-challenge-in-vietnam-outstanding-investment-research.jpg" data-title="CFA Institute Research Challenge in Vietnam: Outstanding Investment Research" type="button"><img alt="Certificate scan: CFA Institute Research Challenge in Vietnam: Outstanding Investment Research" loading="lazy" src="assets/certificates/03-cfa-institute-research-challenge-in-vietnam-outstanding-investment-research.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Data Analyst Internship</h2><p>LEAD Consulting and HUST School of Economics and Management</p><p class="certificate-date"><time>16 May 2025</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Data Analyst Internship" class="certificate-open" data-certificate="assets/certificates/04-data-analyst-internship.jpg" data-title="Data Analyst Internship" type="button"><img alt="Certificate scan: Data Analyst Internship" loading="lazy" src="assets/certificates/04-data-analyst-internship.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Conquer Marketing Data via Tableau</h2><p>LEAD Consulting</p><p class="certificate-date"><time>6 January 2025</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Conquer Marketing Data via Tableau" class="certificate-open" data-certificate="assets/certificates/05-conquer-marketing-data-via-tableau.jpg" data-title="Conquer Marketing Data via Tableau" type="button"><img alt="Certificate scan: Conquer Marketing Data via Tableau" loading="lazy" src="assets/certificates/05-conquer-marketing-data-via-tableau.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Academic Achievement Scholarship, Excellent Grade</h2><p>Hanoi University of Science and Technology</p><p class="certificate-date"><time>28 October 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Academic Achievement Scholarship, Excellent Grade" class="certificate-open" data-certificate="assets/certificates/06-academic-achievement-scholarship-excellent-grade.jpg" data-title="Academic Achievement Scholarship, Excellent Grade" type="button"><img alt="Certificate scan: Academic Achievement Scholarship, Excellent Grade" loading="lazy" src="assets/certificates/06-academic-achievement-scholarship-excellent-grade.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Champion, Managerial Accounting Mastermind 2024</h2><p>HUST School of Economics and Management</p><p class="certificate-date"><time>12 June 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Champion, Managerial Accounting Mastermind 2024" class="certificate-open" data-certificate="assets/certificates/07-champion-managerial-accounting-mastermind-2024.jpg" data-title="Champion, Managerial Accounting Mastermind 2024" type="button"><img alt="Certificate scan: Champion, Managerial Accounting Mastermind 2024" loading="lazy" src="assets/certificates/07-champion-managerial-accounting-mastermind-2024.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Presenter, 19th International Conference on Socio-Economic and Environmental Issues in Development</h2><p>National Economics University</p><p class="certificate-date"><time>11 June 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Presenter, 19th International Conference on Socio-Economic and Environmental Issues in Development" class="certificate-open" data-certificate="assets/certificates/08-presenter-19th-international-conference-on-socio-economic-and-environmental-issues-in-development.jpg" data-title="Presenter, 19th International Conference on Socio-Economic and Environmental Issues in Development" type="button"><img alt="Certificate scan: Presenter, 19th International Conference on Socio-Economic and Environmental Issues in Development" loading="lazy" src="assets/certificates/08-presenter-19th-international-conference-on-socio-economic-and-environmental-issues-in-development.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Third Prize, University Student Research Award</h2><p>Hanoi University of Science and Technology</p><p class="certificate-date"><time>3 June 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Third Prize, University Student Research Award" class="certificate-open" data-certificate="assets/certificates/09-third-prize-university-student-research-award.jpg" data-title="Third Prize, University Student Research Award" type="button"><img alt="Certificate scan: Third Prize, University Student Research Award" loading="lazy" src="assets/certificates/09-third-prize-university-student-research-award.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>41st Student Research Conference Participation</h2><p>Hanoi University of Science and Technology</p><p class="certificate-date"><time>28 May 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: 41st Student Research Conference Participation" class="certificate-open" data-certificate="assets/certificates/10-41st-student-research-conference-participation.jpg" data-title="41st Student Research Conference Participation" type="button"><img alt="Certificate scan: 41st Student Research Conference Participation" loading="lazy" src="assets/certificates/10-41st-student-research-conference-participation.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>ICAEW Business Challenge 2024 Participation</h2><p>ICAEW Vietnam</p><p class="certificate-date"><time>April 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: ICAEW Business Challenge 2024 Participation" class="certificate-open" data-certificate="assets/certificates/11-icaew-business-challenge-2024-participation.jpg" data-title="ICAEW Business Challenge 2024 Participation" type="button"><img alt="Certificate scan: ICAEW Business Challenge 2024 Participation" loading="lazy" src="assets/certificates/11-icaew-business-challenge-2024-participation.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>SAP S/4HANA Warehouse, Purchasing, Sales and Distribution Training</h2><p>SAP University Alliances</p><p class="certificate-date"><time>September 2023 – January 2024</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: SAP S/4HANA Warehouse, Purchasing, Sales and Distribution Training" class="certificate-open" data-certificate="assets/certificates/12-sap-s-4hana-warehouse-purchasing-sales-and-distribution-training-upright.jpg" data-title="SAP S/4HANA Warehouse, Purchasing, Sales and Distribution Training" type="button"><img alt="Certificate scan: SAP S/4HANA Warehouse, Purchasing, Sales and Distribution Training" loading="lazy" src="assets/certificates/12-sap-s-4hana-warehouse-purchasing-sales-and-distribution-training-upright.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>Managerial Accounting Mastermind 2023 Participation</h2><p>HUST School of Economics and Management</p><p class="certificate-date"><time>6 July 2023</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: Managerial Accounting Mastermind 2023 Participation" class="certificate-open" data-certificate="assets/certificates/13-managerial-accounting-mastermind-2023-participation.jpg" data-title="Managerial Accounting Mastermind 2023 Participation" type="button"><img alt="Certificate scan: Managerial Accounting Mastermind 2023 Participation" loading="lazy" src="assets/certificates/13-managerial-accounting-mastermind-2023-participation.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>40th Student Research Conference Participation</h2><p>Hanoi University of Science and Technology</p><p class="certificate-date"><time>2 June 2023</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: 40th Student Research Conference Participation" class="certificate-open" data-certificate="assets/certificates/14-40th-student-research-conference-participation.jpg" data-title="40th Student Research Conference Participation" type="button"><img alt="Certificate scan: 40th Student Research Conference Participation" loading="lazy" src="assets/certificates/14-40th-student-research-conference-participation.jpg"/><span>View full certificate</span></button></div></article>
+<article class="timeline-row certificate-row"><div class="card credential"><h2>ICAEW Certificate in Finance, Accounting and Business Scholarship</h2><p>ICAEW</p><p class="certificate-date"><time>April 2023</time></p></div><div class="certificate-preview"><button aria-label="View full certificate: ICAEW Certificate in Finance, Accounting and Business Scholarship" class="certificate-open" data-certificate="assets/certificates/15-icaew-certificate-in-finance-accounting-and-business-scholarship-upright.jpg" data-title="ICAEW Certificate in Finance, Accounting and Business Scholarship" type="button"><img alt="Certificate scan: ICAEW Certificate in Finance, Accounting and Business Scholarship" loading="lazy" src="assets/certificates/15-icaew-certificate-in-finance-accounting-and-business-scholarship-upright.jpg"/><span>View full certificate</span></button></div></article>
+</div>
+<p class="container secondary certificate-note">Google and Coursera course certificates are grouped together. A year range is shown where the certificate does not state an issue date.</p>
+</section>
+<section aria-labelledby="library-title" class="page" hidden="" id="library">
+<div class="hero"><div class="container"><p class="eyebrow">MY LITTLE LIBRARY</p><h1 id="library-title">Between the pages.</h1><p class="hero-tagline">Books to think with, grow with, and pass along.</p><p class="hero-copy">A growing shelf of fiction, data, and ideas worth returning to.</p></div></div>
+<div class="section container"><div class="section-top"><p class="eyebrow">ON THE SHELF</p></div><div class="book-grid">
+<article class="card book-card"><a aria-label="View My Sweet Orange Tree at Pushkin Press" class="book-art real-cover" href="https://us.pushkinpress.com/book/my-sweet-orange-tree/" rel="noopener noreferrer" target="_blank"><img alt="My Sweet Orange Tree cover" loading="lazy" src="assets/books/my-sweet-orange-tree.jpg"/></a><div class="book-info"><p class="eyebrow">LITERARY FICTION</p><h2>My Sweet Orange Tree <span class="book-original-title">(Meu Pé de Laranja Lima)</span></h2><p class="secondary">José Mauro de Vasconcelos · 1968</p><p>A Brazilian coming-of-age classic about imagination, tenderness, and childhood.</p></div></article>
+<article class="card book-card"><a aria-label="View Data Science from Scratch at O’Reilly" class="book-art real-cover" href="https://www.oreilly.com/library/view/data-science-from/9781492041122/" rel="noopener noreferrer" target="_blank"><img alt="Data Science from Scratch, second edition cover" loading="lazy" src="assets/books/data-science-from-scratch.jpg"/></a><div class="book-info"><p class="eyebrow">DATA SCIENCE</p><h2>Data Science from Scratch: First Principles with Python</h2><p class="secondary">Joel Grus · 2019</p><p>Data science fundamentals built from first principles in Python.</p></div></article>
+<article class="card book-card"><a aria-label="View Text Mining at Springer" class="book-art real-cover" href="https://link.springer.com/book/10.1007/978-3-031-75976-5" rel="noopener noreferrer" target="_blank"><img alt="Text Mining, second edition cover" loading="lazy" src="assets/books/text-mining.jpg"/></a><div class="book-info"><p class="eyebrow">TEXT ANALYTICS</p><h2>Text Mining: Concepts, Implementation, and Big Data Challenge</h2><p class="secondary">Taeho Jo · 2024</p><p>Techniques for finding patterns and meaning in text.</p></div></article>
+<article class="card book-card"><a aria-label="View Enterprise Integration at InformIT" class="book-art real-cover" href="https://www.informit.com/store/enterprise-integration-the-essential-guide-to-integration-9780321223906" rel="noopener noreferrer" target="_blank"><img alt="Enterprise Integration cover" loading="lazy" src="assets/books/enterprise-integration.jpg"/></a><div class="book-info"><p class="eyebrow">SYSTEMS &amp; STRATEGY</p><h2>Enterprise Integration: The Essential Guide to Integration Solutions</h2><p class="secondary">Beth Gold-Bernstein &amp; William Ruh · July 2004</p><p>Practical approaches to connecting systems across an organization.</p></div></article>
+<article class="card book-card"><a aria-label="View Dumb Luck at University of Michigan Press" class="book-art real-cover" href="https://press.umich.edu/Books/D/Dumb-Luck" rel="noopener noreferrer" target="_blank"><img alt="Dumb Luck English edition cover" loading="lazy" src="assets/books/dumb-luck.jpg"/></a><div class="book-info"><p class="eyebrow">VIETNAMESE LITERATURE</p><h2>Dumb Luck <span class="book-original-title">(Số đỏ)</span></h2><p class="secondary">Vũ Trọng Phụng · 1936</p><p>A satire of status and modernization in colonial Vietnam.</p></div></article>
+</div></div><div class="note-band"><div class="container"><p class="eyebrow">READING, REMEMBERING, RETURNING</p><h2>Good books stay in conversation with us.</h2><p>Stories and ideas that invite a second look.</p></div></div>
+</section>
+<section aria-labelledby="music-title" class="page" hidden="" id="music">
+<div class="hero"><div class="container"><p class="eyebrow">MY SOUNDTRACK</p><h1 id="music-title">For every version<br/>of my day.</h1><p class="hero-tagline">A little focus, a little feeling, a little main-character energy.</p></div></div>
+<section class="section container"><p class="eyebrow">PERSONAL MIXES</p><h2>Press play.</h2><div class="spotify-embed-grid">
+<div class="spotify-embed"><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/playlist/1d7htAcfUFjhtFJLcUMBQE?utm_source=generator&amp;si=72bf9344cbb442b7" title="Spotify playlist 1" width="100%"></iframe></div>
+<div class="spotify-embed"><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/playlist/1O1pnSGCD9ByHYWkTv1HYR?utm_source=generator&amp;si=e6a29ff400354f57" title="Spotify playlist 2" width="100%"></iframe></div>
+<div class="spotify-embed"><iframe allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" height="352" loading="lazy" src="https://open.spotify.com/embed/playlist/3d2LU0ltFMILmSPGzW7hGn?utm_source=generator&amp;si=abd9b27ac0c04def" title="Spotify playlist 3" width="100%"></iframe></div>
 </div></section>
-
-<section class="journey"><div class="container">
-<div class="section-number">04</div><h2 class="section-title">RESEARCH<br>JOURNEY</h2>
-<div class="timeline">
-<div class="timeline-item"><div class="timeline-year">2021</div><div class="timeline-content"><h3>Business Analytics</h3><p>Hanoi University of Science and Technology</p></div></div>
-<div class="timeline-item"><div class="timeline-year">2024</div><div class="timeline-content"><h3>Data Analytics</h3><p>NLP · Sentiment Analysis</p></div></div>
-<div class="timeline-item"><div class="timeline-year">2025</div><div class="timeline-content"><h3>FinTech Text Mining</h3><p>Undergraduate Thesis · Vietnamese financial news</p></div></div>
-<div class="timeline-item"><div class="timeline-year">2025–26</div><div class="timeline-content"><h3>Data &amp; AI Transformation</h3><p>Healthcare · Data Architecture · Governance</p></div></div>
-<div class="timeline-item"><div class="timeline-year">2026 →</div><div class="timeline-content"><h3>NLP · LLM · Knowledge Representation</h3><p>Information Extraction · Knowledge Graphs · Graph-RAG</p></div></div>
-</div></div></section>
-
-<section class="experience"><div class="container">
-<div class="section-number">05</div><h2 class="section-title">EXPERIENCE</h2>
-<div class="experience-item"><div class="experience-header"><div><h3>LEAD Consulting</h3><div class="experience-role">Business Analyst · Health Informatics Analyst</div></div><div class="experience-date">2025 — Present</div></div><p class="experience-description">Data &amp; AI strategy · Data architecture · Governance · Interoperability · Analytics</p></div>
-<div class="experience-item"><div class="experience-header"><div><h3>LEAD Consulting</h3><div class="experience-role">Data Analyst Intern</div></div><div class="experience-date">2025</div></div><p class="experience-description">ETL pipelines · Dashboard automation · Data modeling · Sentiment analysis</p></div>
-<div class="experience-item"><div class="experience-header"><div><h3>Five-Star E-Learning</h3><div class="experience-role">Business Analyst · Information Technology Intern</div></div><div class="experience-date">2024</div></div><p class="experience-description">Multi-user e-learning platform · Wireframes · Website and assessment system design</p></div>
-</div></section>
-
-<section class="education"><div class="container">
-<div class="section-number">06</div><h2 class="section-title">EDUCATION</h2>
-<div class="education-main">
-<div class="education-block"><h3>Hanoi University of Science and Technology</h3><p>Bachelor in Business Analytics</p><p>2021 — 2025 · GPA 3.67 / 4.00</p></div>
-<div class="education-block"><div class="thesis"><div class="thesis-label">Undergraduate Thesis</div><div class="thesis-title">Understanding FinTech Services Evolution in Vietnam: A Text Mining Approach on News Media Data</div></div></div>
-</div></div></section>
-
-<section class="publications"><div class="container">
-<div class="section-number">07</div><h2 class="section-title">PUBLICATIONS</h2>
-<article class="publication"><div class="publication-type">2026 · Journal</div><div><h3>Measuring fintech development through composite indices: A text-mining-based review of fintech index studies.</h3><p>International Journal of Innovative Research and Scientific Studies</p><p>DOI: 10.53894/ijirss.v9i6.11737</p></div></article>
-<article class="publication"><div class="publication-type">2025 · Thesis</div><div><h3>Understanding FinTech Services Evolution in Vietnam: A Text Mining Approach on News Media Data.</h3><p>Hanoi University of Science and Technology</p></div></article>
-</div></section>
-
-<section class="contact" id="contact"><div class="container">
-<div class="section-number">08</div><h2 class="contact-title">LET'S<br>CONNECT.</h2>
-<p class="contact-subtitle">Interested in research collaboration, AI/NLP projects, or knowledge-intensive AI systems.</p>
-<div class="contact-links">
-<a href="https://github.com/hanaluw">GitHub</a>
-<a href="https://www.linkedin.com/in/h%C3%A2n-l%C6%B0u-gia-104906294/">LinkedIn</a>
-<a href="#">Google Scholar</a>
-<a href="mailto:your-email@example.com">Email</a>
-</div></div></section>
-
-<div class="container"><footer><span>© 2026 Han Gia Luu</span><span>AI · NLP · Knowledge</span></footer></div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><strong>GIA-HAN LUU</strong><em>A little pink. A lot of purpose.</em><span>Personal portfolio</span></div></footer>
+<dialog aria-labelledby="certificate-dialog-title" id="certificate-dialog"><button aria-label="Close certificate" class="dialog-close" type="button">×</button><h2 id="certificate-dialog-title"></h2><img alt="" src=""/></dialog>
 </body>
 </html>
