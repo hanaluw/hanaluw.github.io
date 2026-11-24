@@ -286,7 +286,7 @@ const activityGalleries = {
   { src: "assets/activities/images/fintech-index-research-certificate-3.jpg", alt: "Student research award certificate", fit: "contain" }
  ],
  "Equity Research & Financial Forecasting - CFA Institute Research Challenge": [
-  { src: "assets/activities/images/cfa-research-challenge-certificate.jpg", alt: "CFA Institute Research Challenge certificate", fit: "contain" },
+  { src: "assets/activities/images/cfa-research-challenge-certificate.jpg?v=upright-20261125", alt: "CFA Institute Research Challenge certificate", fit: "contain" },
   { src: "assets/activities/images/cfa-report-page-3.jpg", alt: "Additional page from the SSI Securities research report", fit: "contain" },
   { src: "assets/activities/images/cfa-report-page-16.jpg", alt: "Financial analysis page from the SSI Securities research report", fit: "contain" }
  ],
