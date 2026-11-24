@@ -2,7 +2,7 @@ window.portfolioActivities = [
   {
     category: "Research", years: ["2024"], year: "2024", status: "Conference presentation · Third Prize",
     title: "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
-    affiliation: "National Economics University · SEM–HUST", image: "assets/activities/images/fintech-index-review-representative.jpg", fit: "cover",
+    affiliation: "National Economics University · SEM - HUST", image: "assets/activities/images/fintech-index-review-representative.jpg", fit: "cover",
     alt: "Research team presenting its fintech index study",
     excerpt: "We collected 227 research publications from Scopus and applied text preprocessing, TF-IDF, SVM classification, and LDA topic modeling to identify research patterns.",
     description: [
@@ -10,7 +10,7 @@ window.portfolioActivities = [
       "Our research started with a question: How can we systematically measure fintech development when existing studies use different indicators and methodologies?",
       "We collected 227 research publications from Scopus and applied text preprocessing, TF-IDF, SVM classification, and LDA topic modeling to identify research patterns. We found three main dimensions of fintech measurement: development, adoption, and financial inclusion.",
       "Beyond topic modeling, we explored how composite indices are constructed, particularly how indicator selection, normalization, weighting, and validation differ between survey-based and textual data.",
-      "With the same research, our team also won Third Prize in the oral presentation category at the 41st Student Research Conference at SEM–HUST."
+      "With the same research, our team also won Third Prize in the oral presentation category at the 41st Student Research Conference at SEM - HUST."
     ],
     links: [
       { label: "Published paper", href: "https://doi.org/10.53894/ijirss.v9i6.11737" },
@@ -19,7 +19,7 @@ window.portfolioActivities = [
     ]
   },
   {
-    category: "Research", years: ["2024", "2025"], year: "2024–2025", status: "Outstanding Investment Research",
+    category: "Research", years: ["2024", "2025"], year: "2024 - 2025", status: "Outstanding Investment Research",
     title: "Equity Research & Financial Forecasting — CFA Institute Research Challenge",
     affiliation: "CFA Institute Research Challenge in Vietnam", image: "assets/activities/images/cfa-research-representative.jpg", fit: "contain",
     alt: "Excerpt from the team’s SSI Securities equity research report",
@@ -101,11 +101,11 @@ window.portfolioActivities = [
     title: "AI-Embedded Healthcare Data Platform",
     affiliation: "Hospital data integration architecture", image: "assets/activities/images/healthcare-data-platform-representative.jpg", fit: "contain",
     alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform",
-    excerpt: "I explored a shared integration layer for fragmented hospital systems, using HL7 FHIR, OMOP CDM, and a Bronze–Silver–Gold data model to prepare reliable data for analytics and research.",
+    excerpt: "I explored a shared integration layer for fragmented hospital systems, using HL7 FHIR, OMOP CDM, and a Bronze - Silver - Gold data model to prepare reliable data for analytics and research.",
     description: [
       "While working with public hospitals in Vietnam, I observed how fragmented information systems require healthcare staff to bridge gaps manually, often through extensive paperwork. These disconnected systems also limit the use of clinical data.",
       "I explored how other sectors address interoperability and proposed a centralized data integration architecture that connects existing hospital systems rather than replacing them. The proposed layer brings together clinical, administrative, operational, and research data using standards such as HL7 FHIR, OMOP CDM, and established clinical terminologies.",
-      "The architecture follows a Bronze–Silver–Gold data model to transform fragmented source data into standardized, validated, and research-ready datasets. I considered AI capabilities across the data lifecycle, including semantic mapping, entity resolution, data quality monitoring, clinical NLP, predictive analytics, and AI-assisted research.",
+      "The architecture follows a Bronze - Silver - Gold data model to transform fragmented source data into standardized, validated, and research-ready datasets. I considered AI capabilities across the data lifecycle, including semantic mapping, entity resolution, data quality monitoring, clinical NLP, predictive analytics, and AI-assisted research.",
       "My goal is to help information move reliably across departments so it can support operational decisions and research. I see interoperability as a foundation for a more connected healthcare system. This is a proposed architecture, not a deployed platform."
     ], links: []
   },
@@ -113,12 +113,12 @@ window.portfolioActivities = [
     category: "Projects", years: [], year: "Date not specified", status: "Independent project concept",
     title: "Project Fintech Intelligent Platform",
     affiliation: "Extension of my undergraduate thesis", image: "assets/activities/images/fintech-intelligent-platform-representative.jpg", fit: "contain",
-    alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications",
+    alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications",
     excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
     description: [
       "This project extends my undergraduate thesis. Fintech information in Vietnam is scattered across financial news websites, making it difficult for researchers and analysts to track technology developments, company activity, and emerging market trends.",
       "I proposed a data platform to centralize Vietnamese fintech news and prepare a reliable foundation for NLP-based analysis and knowledge extraction. The offline pipeline would collect financial news articles, standardize their metadata, and store structured datasets in Parquet format.",
-      "The data architecture uses a Bronze–Silver–Gold framework to organize raw articles, cleaned records, and analytical features. I also proposed testing real-world data challenges, including skew, duplicates, schema evolution, late-arriving events, and traffic bursts.",
+      "The data architecture uses a Bronze - Silver - Gold framework to organize raw articles, cleaned records, and analytical features. I also proposed testing real-world data challenges, including skew, duplicates, schema evolution, late-arriving events, and traffic bursts.",
       "As a future extension, I would integrate NLP-based entity extraction and relationship modeling to develop a fintech knowledge graph. This entry describes a proposed platform and planned evaluation, not a completed deployment."
     ], links: []
   },
@@ -147,14 +147,14 @@ window.portfolioActivities = [
     title: "Business Case Analysis & Problem-Solving — Managerial Accounting Mastermind",
     affiliation: "HUST School of Economics and Management", image: "assets/activities/images/managerial-accounting-champion-representative.png", fit: "cover",
     alt: "Team celebrating its Managerial Accounting Mastermind 2024 championship",
-    excerpt: "Our team won the Managerial Accounting Mastermind 2024. We examined operational pain points and prioritized possible solutions using an Impact–Feasibility Matrix.",
+    excerpt: "Our team won the Managerial Accounting Mastermind 2024. We examined operational pain points and prioritized possible solutions using an Impact - Feasibility Matrix.",
     description: [
       "Our team won the Managerial Accounting Mastermind 2024. This experience built on my earlier participation in the competition and gave me the opportunity to apply managerial accounting concepts to a business case.",
-      "We had to examine different aspects of business operations and automation, identify whether each pain point stemmed from people, the environment, or processes and technology, and gradually develop possible solutions for each problem before prioritizing them using the Impact–Feasibility Matrix."
+      "We had to examine different aspects of business operations and automation, identify whether each pain point stemmed from people, the environment, or processes and technology, and gradually develop possible solutions for each problem before prioritizing them using the Impact - Feasibility Matrix."
     ], links: [{ label: "Certificate", href: "assets/certificates/07-champion-managerial-accounting-mastermind-2024.jpg" }]
   },
   {
-    category: "Other Activities", years: ["2023", "2024"], year: "2023–2024", status: "Training completed",
+    category: "Other Activities", years: ["2023", "2024"], year: "2023 - 2024", status: "Training completed",
     title: "Enterprise Resource Planning & Business Process Integration — SAP S/4HANA",
     affiliation: "SAP University Alliances", image: "assets/activities/images/sap-s4hana-training-representative.jpg", fit: "contain",
     alt: "Certificate of participation in SAP S/4HANA training",
@@ -192,7 +192,7 @@ window.portfolioActivities = [
     excerpt: "Drawing on my experiences through “thick and thin,” I shared activities to help juniors make the most of their four years at HUST.",
     description: [
       "A friendly sharing session with juniors from the same Business Analytics program. Drawing on my experiences through “thick and thin,” I shared activities that could help them make the most of their four years at HUST without regrets, filling those years with knowledge and joy!",
-      "Each annual event reached around 60–70 students.",
+      "Each annual event reached around 60 - 70 students.",
       "It was super fun to guide younger students with a youthful spirit!"
     ], links: []
   },
@@ -254,7 +254,7 @@ const activityGalleries = {
     { src: "assets/activities/images/healthcare-data-platform-representative.jpg", alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform", fit: "contain" }
   ],
   "Project Fintech Intelligent Platform": [
-    { src: "assets/activities/images/fintech-intelligent-platform-representative.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze–Silver–Gold layers, and target applications", fit: "contain" }
+    { src: "assets/activities/images/fintech-intelligent-platform-representative.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications", fit: "contain" }
   ],
   "Marketing Analytics & Advanced Tableau Visualization": [
     { src: "assets/activities/images/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
@@ -288,7 +288,7 @@ const activityGalleries = {
     { src: "assets/activities/images/orientation-day-k70-poster.jpg", alt: "Orientation Day poster for the 70th cohort", fit: "contain" },
     { src: "assets/activities/images/orientation-day-k69-audience.jpg", alt: "Audience at a Business Analytics orientation event", fit: "cover" },
     { src: "assets/activities/images/mentorship-introduction-poster.jpg", alt: "Student introduction poster used at the event", fit: "contain" },
-    { src: "assets/activities/images/business-analytics-mentorship-representative.jpg", alt: "Business Analytics students at Orientation Day", fit: "cover" }
+    { src: "assets/activities/images/business-analytics-mentorship-representative.jpg", alt: "I delivered a friendly pitching", fit: "cover" }
   ],
   "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data": [
     { src: "assets/activities/images/fintech-thesis-research-discussion.jpg", alt: "Fintech thesis discussion with fellow researchers", fit: "cover" },
