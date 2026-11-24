@@ -8,12 +8,7 @@ const portfolioGroups=document.querySelector('#portfolio-groups');
 const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 function renderPortfolio(){
   if(!portfolioGroups)return;
-  const order=['Research','Projects','Other Activities'];
-  const notes={Research:'Questions, evidence, and findings',Projects:'Putting data to work','Other Activities':'Learning, teamwork, and community'};
-  portfolioGroups.innerHTML=order.map(category=>{
-    const cards=portfolioActivities.filter(activity=>activity.category===category);
-    if(!cards.length)return '';
-    const entries=cards.map(activity=>{
+  const entries=portfolioActivities.map(activity=>{
       const descriptions=activity.description.map(text=>`<p>${escapeHtml(text)}</p>`).join('');
       const links=activity.links.map(link=>`<a href="${escapeHtml(link.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)} <span aria-hidden="true">↗</span></a>`).join('');
       const gallery=activity.gallery.map(image=>`<button class="activity-gallery-image" type="button" data-certificate="${escapeHtml(image.src)}" data-title="${escapeHtml(image.alt)}" aria-label="View image: ${escapeHtml(image.alt)}"><img class="${image.fit==='contain'?'contain':''}" src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}" loading="lazy"/></button>`).join('');
@@ -24,9 +19,8 @@ function renderPortfolio(){
           <h3>${escapeHtml(activity.title)}</h3><p class="activity-affiliation">${escapeHtml(activity.affiliation)}</p><p class="activity-excerpt">${escapeHtml(activity.excerpt)}</p>
           ${links?`<div class="activity-links">${links}</div>`:''}
         </div><details class="activity-details"><summary>My full story</summary><div class="activity-full">${descriptions}${gallerySection}</div></details></article>`;
-    }).join('');
-    return `<section class="activity-group" data-group="${escapeHtml(category)}" aria-labelledby="group-${category.toLowerCase().replaceAll(' ','-')}"><header class="activity-group-heading"><h2 id="group-${category.toLowerCase().replaceAll(' ','-')}">${escapeHtml(category)}</h2><span>${notes[category]}</span></header><div class="activity-list">${entries}</div></section>`;
   }).join('');
+  portfolioGroups.innerHTML=`<div class="activity-list">${entries}</div>`;
 }
 renderPortfolio();
 
@@ -59,9 +53,6 @@ function filterActivities(){
     card.hidden=!(categoryMatch&&yearMatch);
     if(!card.hidden)visible++;
   }
-  document.querySelectorAll('.activity-group').forEach(group=>{
-    group.hidden=!group.querySelector('.activity-item:not([hidden])');
-  });
   activityCount.textContent=`${visible} ${visible===1?'activity':'activities'}`;
   activityEmpty.hidden=visible!==0;
 }

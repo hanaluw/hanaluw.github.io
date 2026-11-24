@@ -213,8 +213,7 @@ window.portfolioActivities = [
  }
 ];
 
-// Keep the category groups focused on Data Science, ordered newest to oldest within each group.
-// The two undated project concepts follow the projects with known dates.
+// Keep the activity cards in the explicit Data Science theme order used on the portfolio page.
 const portfolioActivityOrder = [
  "Deep Learning, LLMs & Retrieval-Augmented Generation - VIASM",
  "AI-Embedded Healthcare Data Platform",
