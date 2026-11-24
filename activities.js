@@ -195,3 +195,61 @@ window.portfolioActivities = [
     ], links: [{ label: "Certificate", href: "assets/certificates/11-icaew-business-challenge-2024-participation.jpg" }]
   }
 ];
+
+const activityGalleries = {
+  "Marketing Analytics & Advanced Tableau Visualization": [
+    { src: "assets/activities/gallery/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
+    { src: "assets/activities/gallery/tableau-retail-analysis-view-1.jpg", alt: "First Tableau retail analysis view", fit: "contain" },
+    { src: "assets/activities/gallery/tableau-retail-analysis-view-2.jpg", alt: "Second Tableau retail analysis view", fit: "contain" }
+  ],
+  "Business Case Analysis & Problem-Solving — Managerial Accounting Mastermind": [
+    { src: "assets/activities/gallery/managerial-accounting-2024-certificate.jpg", alt: "Champion certificate for Managerial Accounting Mastermind 2024", fit: "contain" }
+  ],
+  "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies": [
+    { src: "assets/activities/gallery/fintech-index-research-certificate-1.jpg", alt: "Certificate related to the fintech index research", fit: "contain" },
+    { src: "assets/activities/gallery/fintech-index-research-certificate-2.jpg", alt: "Research presentation certificate", fit: "contain" },
+    { src: "assets/activities/gallery/fintech-index-research-certificate-3.jpg", alt: "Student research award certificate", fit: "contain" }
+  ],
+  "Equity Research & Financial Forecasting — CFA Institute Research Challenge": [
+    { src: "assets/activities/gallery/cfa-research-challenge-certificate.jpg", alt: "CFA Institute Research Challenge certificate", fit: "contain" },
+    { src: "assets/activities/gallery/cfa-report-page-3.jpg", alt: "Additional page from the SSI Securities research report", fit: "contain" },
+    { src: "assets/activities/gallery/cfa-report-page-16.jpg", alt: "Financial analysis page from the SSI Securities research report", fit: "contain" }
+  ],
+  "Quantitative Research on Student Academic Performance — SPSS": [
+    { src: "assets/activities/gallery/academic-performance-research-certificate.jpg", alt: "Student research conference certificate", fit: "contain" }
+  ],
+  "Google Data Analytics & Business Intelligence Training": [
+    { src: "assets/activities/gallery/google-data-models-and-pipelines.jpg", alt: "Google certificate for Data Models and Pipelines", fit: "contain" },
+    { src: "assets/activities/gallery/google-business-intelligence.jpg", alt: "Google certificate for Business Intelligence", fit: "contain" },
+    { src: "assets/activities/gallery/google-prepare-data-for-exploration.jpg", alt: "Google certificate for Prepare Data for Exploration", fit: "contain" },
+    { src: "assets/activities/gallery/google-data-driven-decisions.jpg", alt: "Google certificate for Data-Driven Decisions", fit: "contain" },
+    { src: "assets/activities/gallery/google-foundations-data-everywhere.jpg", alt: "Google certificate for Foundations: Data, Data, Everywhere", fit: "contain" }
+  ],
+  "Student Mentorship & Academic Experience Sharing — Business Analytics": [
+    { src: "assets/activities/gallery/orientation-day-k70-poster.jpg", alt: "Orientation Day poster for the 70th cohort", fit: "contain" },
+    { src: "assets/activities/gallery/orientation-day-k69-audience.jpg", alt: "Audience at a Business Analytics orientation event", fit: "cover" },
+    { src: "assets/activities/gallery/mentorship-introduction-poster.jpg", alt: "Student introduction poster used at the event", fit: "contain" },
+    { src: "assets/activities/gallery/orientation-day-group-photo.png", alt: "Business Analytics students at Orientation Day", fit: "cover" }
+  ],
+  "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data": [
+    { src: "assets/activities/gallery/fintech-thesis-research-discussion.jpg", alt: "Fintech thesis discussion with fellow researchers", fit: "cover" },
+    { src: "assets/activities/gallery/fintech-thesis-conference-discussion.jpg", alt: "Conference discussion about the fintech research", fit: "cover" },
+    { src: "assets/activities/gallery/fintech-thesis-presentation.jpg", alt: "Presenting findings from the fintech thesis", fit: "cover" },
+    { src: "assets/activities/gallery/fintech-thesis-panel-session.jpg", alt: "Fintech research session at the conference", fit: "cover" },
+    { src: "assets/activities/gallery/fintech-thesis-conference-visit.jpg", alt: "Conference visit with the research team", fit: "cover" },
+    { src: "assets/activities/gallery/fintech-thesis-methods-infographic.png", alt: "Visual summary of the fintech text-mining research", fit: "contain" }
+  ],
+  "International Corporate Taxation & Compliance Case Competition": [
+    { src: "assets/activities/gallery/tax-competition-announcement.png", alt: "Competition information and tax case materials", fit: "contain" },
+    { src: "assets/activities/gallery/tax-team-discussion.jpg", alt: "Team reviewing the corporate tax case", fit: "cover" },
+    { src: "assets/activities/gallery/tax-competition-ceremony.jpg", alt: "Participants at the corporate tax competition ceremony", fit: "cover" }
+  ],
+  "Business Case Consulting — ICAEW Vietnam Business Challenge": [
+    { src: "assets/activities/gallery/icaew-case-discussion.jpg", alt: "Team discussing the ICAEW business case", fit: "cover" },
+    { src: "assets/activities/gallery/icaew-award-ceremony.jpg", alt: "Team at the ICAEW Vietnam Business Challenge ceremony", fit: "cover" }
+  ]
+};
+
+for (const activity of window.portfolioActivities) {
+  activity.gallery = activityGalleries[activity.title] || [];
+}
