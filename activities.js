@@ -97,6 +97,32 @@ window.portfolioActivities = [
     ], links: [{ label: "Certificate", href: "assets/certificates/05-conquer-marketing-data-via-tableau.jpg" }]
   },
   {
+    category: "Projects", years: [], year: "Date not specified", status: "Architecture proposal",
+    title: "AI-Embedded Healthcare Data Platform",
+    affiliation: "Hospital data integration architecture", image: "assets/activities/healthcare-data-platform-concept.svg", fit: "contain",
+    alt: "Concept diagram for an AI-embedded healthcare data platform",
+    excerpt: "I explored a shared integration layer for fragmented hospital systems, using HL7 FHIR, OMOP CDM, and a Bronze–Silver–Gold data model to prepare reliable data for analytics and research.",
+    description: [
+      "While working with public hospitals in Vietnam, I observed how fragmented information systems require healthcare staff to bridge gaps manually, often through extensive paperwork. These disconnected systems also limit the use of clinical data.",
+      "I explored how other sectors address interoperability and proposed a centralized data integration architecture that connects existing hospital systems rather than replacing them. The proposed layer brings together clinical, administrative, operational, and research data using standards such as HL7 FHIR, OMOP CDM, and established clinical terminologies.",
+      "The architecture follows a Bronze–Silver–Gold data model to transform fragmented source data into standardized, validated, and research-ready datasets. I considered AI capabilities across the data lifecycle, including semantic mapping, entity resolution, data quality monitoring, clinical NLP, predictive analytics, and AI-assisted research.",
+      "My goal is to help information move reliably across departments so it can support operational decisions and research. I see interoperability as a foundation for a more connected healthcare system. This is a proposed architecture, not a deployed platform."
+    ], links: []
+  },
+  {
+    category: "Projects", years: [], year: "Date not specified", status: "Independent project concept",
+    title: "Project Fintech Intelligent Platform",
+    affiliation: "Extension of my undergraduate thesis", image: "assets/activities/fintech-intelligent-platform-concept.svg", fit: "contain",
+    alt: "Concept diagram of a fintech news data pipeline and future knowledge graph",
+    excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
+    description: [
+      "This project extends my undergraduate thesis. Fintech information in Vietnam is scattered across financial news websites, making it difficult for researchers and analysts to track technology developments, company activity, and emerging market trends.",
+      "I proposed a data platform to centralize Vietnamese fintech news and prepare a reliable foundation for NLP-based analysis and knowledge extraction. The offline pipeline would collect financial news articles, standardize their metadata, and store structured datasets in Parquet format.",
+      "The data architecture uses a Bronze–Silver–Gold framework to organize raw articles, cleaned records, and analytical features. I also proposed testing real-world data challenges, including skew, duplicates, schema evolution, late-arriving events, and traffic bursts.",
+      "As a future extension, I would integrate NLP-based entity extraction and relationship modeling to develop a fintech knowledge graph. This entry describes a proposed platform and planned evaluation, not a completed deployment."
+    ], links: []
+  },
+  {
     category: "Other Activities", years: ["2026"], year: "2026", status: "Course completed",
     title: "Deep Learning, LLMs & Retrieval-Augmented Generation — VIASM",
     affiliation: "Vietnam Institute for Advanced Study in Mathematics · Banking Academy of Vietnam", image: "assets/activities/llm-rag-course-certificate.jpg", fit: "contain",
@@ -194,6 +220,33 @@ window.portfolioActivities = [
       "SWOT and as-is/to-be analysis; Fishbone diagrams to identify root causes; MECE (Mutually Exclusive, Collectively Exhaustive): breaks problems into non-overlapping, complete categories. We never thought an algebra principle could be applied to business case-solving methods; Porter’s Five Forces: evaluates a business’s external positioning; BCG Growth-Share Matrix: categorizes issues and goals into actionable groups."
     ], links: [{ label: "Certificate", href: "assets/certificates/11-icaew-business-challenge-2024-participation.jpg" }]
   }
+];
+
+// Keep the category groups focused on Data Science, ordered newest to oldest within each group.
+// The two undated project concepts follow the projects with known dates.
+const portfolioActivityOrder = [
+  "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
+  "Equity Research & Financial Forecasting — CFA Institute Research Challenge",
+  "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
+  "Quantitative Research on Student Academic Performance — SPSS",
+  "Scholarship Data Management for Children with Disabilities",
+  "Higher Education Admissions Analytics",
+  "Marketing Analytics & Advanced Tableau Visualization",
+  "AI-Embedded Healthcare Data Platform",
+  "Project Fintech Intelligent Platform",
+  "Deep Learning, LLMs & Retrieval-Augmented Generation — VIASM",
+  "Student Mentorship & Academic Experience Sharing — Business Analytics",
+  "International Corporate Taxation & Compliance Case Competition",
+  "Business Case Analysis & Problem-Solving — Managerial Accounting Mastermind",
+  "Google Data Analytics & Business Intelligence Training",
+  "Business Case Consulting — ICAEW Vietnam Business Challenge",
+  "Enterprise Resource Planning & Business Process Integration — SAP S/4HANA",
+  "First Business Case Competition — Managerial Accounting Mastermind 2023"
+];
+const portfolioActivityByTitle = new Map(window.portfolioActivities.map(activity => [activity.title, activity]));
+window.portfolioActivities = [
+  ...portfolioActivityOrder.map(title => portfolioActivityByTitle.get(title)).filter(Boolean),
+  ...window.portfolioActivities.filter(activity => !portfolioActivityOrder.includes(activity.title))
 ];
 
 const activityGalleries = {
