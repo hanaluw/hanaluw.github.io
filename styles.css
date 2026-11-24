@@ -184,10 +184,12 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
   #portfolio .activity-affiliation{font-size:12px!important}
 }
 
-#portfolio .activity-gallery{margin-top:8px}
-#portfolio .activity-gallery-grid{display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px}
-#portfolio .activity-gallery-image{flex:0 1 calc(50% - 5px);width:calc(50% - 5px);max-width:calc(50% - 5px);height:auto;overflow:visible;padding:0;border:0;border-radius:0;background:transparent;line-height:0}
+#portfolio .activity-gallery{display:flex;align-items:center;gap:8px;margin-top:8px}
+#portfolio .activity-gallery-stage{flex:1;min-width:0;text-align:center}
+#portfolio .activity-gallery-slide[hidden]{display:none}
+#portfolio .activity-gallery-image{display:inline-block;width:auto;max-width:100%;height:auto;overflow:visible;padding:0;border:0;border-radius:0;background:transparent;line-height:0}
 #portfolio .activity-gallery-image:hover{opacity:.94}
-#portfolio .activity-gallery-image img{display:block;width:100%;height:auto;object-fit:contain;border-radius:0}
+#portfolio .activity-gallery-image img{display:block;width:auto;max-width:100%;max-height:75vh;height:auto;object-fit:contain;border-radius:0}
 #portfolio .activity-gallery-image img.contain{object-fit:contain;background:transparent}
-@media(max-width:430px){#portfolio .activity-gallery-image{flex-basis:100%;width:100%;max-width:100%}}
+#portfolio .activity-gallery-nav{flex:0 0 32px;width:32px;height:32px;padding:0;border:1px solid var(--line);border-radius:2px;background:var(--selected);color:var(--ink);font-family:inherit;font-size:22px;line-height:1}
+#portfolio .activity-gallery-nav:hover{border-color:var(--accent)}
