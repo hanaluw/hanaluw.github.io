@@ -110,8 +110,8 @@ window.portfolioActivities = [
   ], links: []
  },
  {
-  category: "Projects", years: ["2026"], year: "2026", status: "Independent project concept",
-  title: "Project Fintech Intelligent Platform",
+  category: "Projects", years: ["2026"], year: "2026", status: "Independent project",
+  title: "Fintech Intelligent Platform",
   affiliation: "Extension of my undergraduate thesis", image: "assets/activities/images/fintech-intelligent-platform-representative.jpg", fit: "contain",
   alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications",
   excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
@@ -217,7 +217,7 @@ window.portfolioActivities = [
 const portfolioActivityOrder = [
  "Deep Learning, LLMs & Retrieval-Augmented Generation - VIASM",
  "AI-Embedded Healthcare Data Platform",
- "Project Fintech Intelligent Platform",
+ "Fintech Intelligent Platform",
  "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
  "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
  "Scholarship Data Management for Children with Disabilities",
@@ -242,7 +242,7 @@ const activityGalleries = {
  "AI-Embedded Healthcare Data Platform": [
   { src: "assets/activities/images/healthcare-data-platform-representative.jpg", alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform", fit: "contain" }
  ],
- "Project Fintech Intelligent Platform": [
+ "Fintech Intelligent Platform": [
   { src: "assets/activities/images/fintech-intelligent-platform-representative.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications", fit: "contain" }
  ],
  "Marketing Analytics & Advanced Tableau Visualization": [
