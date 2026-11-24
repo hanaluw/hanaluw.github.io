@@ -137,12 +137,12 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #portfolio .portfolio-content{padding-bottom:42px}
 #portfolio .portfolio-controls{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:14px 0 18px;border-bottom:1px solid var(--line)}
 #portfolio .category-filters{display:flex;flex-wrap:wrap;gap:8px}
-#portfolio .filter-chip{border:1px solid var(--line);border-radius:999px;background:#fff;padding:8px 14px;color:var(--ink);font-size:14px}
+#portfolio .filter-chip{border:1px solid var(--line);border-radius:2px;background:#fff;padding:8px 14px;color:var(--ink);font-size:14px}
 #portfolio .filter-chip:hover,#portfolio .filter-chip[aria-pressed="true"]{border-color:var(--accent);background:var(--selected);color:var(--ink)}
 #portfolio .year-filter{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink)}
-#portfolio .year-filter select{border:1px solid var(--line);border-radius:8px;padding:8px 30px 8px 10px;background:#fff;color:var(--ink);font:inherit;font-size:14px}
+#portfolio .year-filter select{border:1px solid var(--line);border-radius:2px;padding:8px 30px 8px 10px;background:#fff;color:var(--ink);font:inherit;font-size:14px}
 #portfolio .activity-list{display:grid;gap:10px;padding-top:10px}
-#portfolio .activity-item{display:block;padding:14px;background:rgba(255,255,255,.92);border:1px solid rgba(236,213,223,.8);border-radius:11px;box-shadow:0 3px 10px rgba(72,48,61,.06)}
+#portfolio .activity-item{display:block;padding:14px;background:rgba(255,255,255,.92);border:1px solid rgba(236,213,223,.8);border-radius:2px;box-shadow:0 3px 10px rgba(72,48,61,.06)}
 #portfolio .activity-image{float:left;width:min(42%,360px);height:auto;margin:0 16px 8px 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;line-height:0}
 #portfolio .activity-image:hover{opacity:.94}
 #portfolio .activity-thumb{display:block;width:100%;height:auto;object-fit:contain;border-radius:0}
@@ -155,7 +155,7 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #portfolio .activity-affiliation{margin:0 0 5px!important;font-size:12px!important;line-height:1.35!important;color:var(--muted)}
 #portfolio .activity-excerpt{margin:0!important;font-size:14px!important;line-height:1.45!important}
 #portfolio .activity-skills{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
-#portfolio .activity-skills span{display:inline-block;padding:3px 6px;background:#111;color:#fff;font-family:Arial,sans-serif;font-size:11px;line-height:1.2;white-space:nowrap}
+#portfolio .activity-skills span{display:inline-block;padding:3px 6px;background:#f7dce7;color:var(--ink);font-family:inherit;font-size:11px;line-height:1.2;white-space:nowrap;border:1px solid var(--line);border-radius:2px}
 #portfolio .activity-details{clear:both;padding-top:7px;font-size:13px;line-height:1.45}
 #portfolio .activity-details summary{width:max-content;max-width:100%;cursor:pointer;color:var(--accent);font-size:13px;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 #portfolio .activity-full{padding-top:5px;max-width:none}
@@ -170,7 +170,7 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
   #portfolio .portfolio-controls{gap:10px 12px}
   #portfolio .category-filters{width:100%;gap:6px}
   #portfolio .filter-chip{padding:7px 11px;font-size:12px}
-  #portfolio .activity-item{padding:11px;border-radius:10px}
+  #portfolio .activity-item{padding:11px;border-radius:2px}
   #portfolio .activity-image{width:44%;max-width:310px;margin-right:12px}
   #portfolio .activity-body h3{font-size:17px}
   #portfolio .activity-excerpt{font-size:14px!important;line-height:1.5!important}
