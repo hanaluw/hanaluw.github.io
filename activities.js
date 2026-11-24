@@ -239,7 +239,7 @@ window.portfolioActivities = [
   description: [
    "How do consultants structure an unfamiliar business problem under time pressure?",
    "It all comes down to using the right business framework at the right moment. We learned how consultants deliver solutions and transform a customer’s problem into a problem-solving journey told as a story.",
-   "Top frameworks we used:",
+   "Through this contest, Deloitte experts trained us in the key frameworks they use when first approaching a problem:",
    "SWOT and as-is/to-be analysis; Fishbone diagrams to identify root causes; MECE (Mutually Exclusive, Collectively Exhaustive): breaks problems into non-overlapping, complete categories. We never thought an algebra principle could be applied to business case-solving methods; Porter’s Five Forces: evaluates a business’s external positioning; BCG Growth-Share Matrix: categorizes issues and goals into actionable groups."
   ], links: [{ label: "Certificate", href: "assets/certificates/11-icaew-business-challenge-2024-participation.jpg" }]
  }
