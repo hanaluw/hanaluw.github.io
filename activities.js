@@ -2,6 +2,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2024"], year: "2024", status: "Conference presentation · Third Prize",
   title: "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
+  skills: ["Text Mining","TF-IDF","SVM","LDA Topic Modeling","Research Synthesis"],
   affiliation: "National Economics University · SEM - HUST", image: "assets/activities/images/fintech-index-review-representative.jpg", fit: "cover",
   alt: "Research team presenting its fintech index study",
   excerpt: "We collected 227 research publications from Scopus and applied text preprocessing, TF-IDF, SVM classification, and LDA topic modeling to identify research patterns.",
@@ -21,6 +22,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2024", "2025"], year: "2024 - 2025", status: "Outstanding Investment Research",
   title: "Equity Research & Financial Forecasting - CFA Institute Research Challenge",
+  skills: ["Financial Analysis","Forecasting","Equity Valuation","Competitive Analysis"],
   affiliation: "CFA Institute Research Challenge in Vietnam", image: "assets/activities/images/cfa-research-representative.jpg", fit: "contain",
   alt: "Excerpt from the team’s SSI Securities equity research report",
   excerpt: "Our team conducted equity research on SSI Securities Corporation, analyzing its business model, financial statements, and competitive position.",
@@ -34,6 +36,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2023"], year: "2023", status: "Student Research Conference",
   title: "Quantitative Research on Student Academic Performance - SPSS",
+  skills: ["Survey Analysis","SPSS","Correlation","Linear Regression"],
   affiliation: "Hanoi University of Science and Technology", image: "assets/activities/images/student-academic-performance-representative.jpg", fit: "contain",
   alt: "Research poster on emotional intelligence, resilience, engagement, and academic performance",
   excerpt: "Our team studied emotional intelligence, resilience, engagement, and academic performance using survey data from 249 HUST students.",
@@ -47,6 +50,7 @@ window.portfolioActivities = [
  {
   category: "Research", years: ["2025"], year: "2025", status: "Thesis presented at an international conference",
   title: "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
+  skills: ["News Data","Text Mining","LDA","BERTopic","Topic Modeling"],
   affiliation: "Business Dynamics in Emerging Economy conference", image: "assets/activities/images/textminingfintech.jpg", fit: "cover",
   alt: "Conference group at Business Dynamics in Emerging Economy 2025",
   excerpt: "Using LDA and BERTopic, our research explored how fintech services in Vietnam have evolved through patterns in financial news coverage.",
@@ -59,6 +63,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2026"], year: "2026", status: "Data management contribution",
   title: "Scholarship Data Management for Children with Disabilities",
+  skills: ["Python","Excel","Data Cleaning","Record Reconciliation","Data Quality"],
   affiliation: "Vietnam Fund for Children with Disabilities", image: "assets/activities/images/scholarship-data-management-representative.jpg", fit: "contain",
   alt: "Certificate recognizing data management contribution",
   excerpt: "I consolidated and cleaned 2,133 scholarship beneficiary records from 2024 and 2025 using Python and Excel for standardization, reconciliation, and cross-validation.",
@@ -73,6 +78,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2025"], year: "2025", status: "Data analyst internship",
   title: "Higher Education Admissions Analytics",
+  skills: ["Data Collection","Data Cleaning","Database Design","Admissions Analytics"],
   affiliation: "LEAD Consulting · HUST School of Economics and Management", image: "assets/activities/images/admissions-analytics-representative.jpg", fit: "contain",
   alt: "Data analyst internship certificate from LEAD Consulting",
   excerpt: "During my first internship, I cleaned and analyzed higher-education admissions data in Vietnam.",
@@ -86,6 +92,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2025"], year: "2025", status: "Workshop project",
   title: "Marketing Analytics & Advanced Tableau Visualization",
+  skills: ["Tableau","Data Visualization","Marketing Analytics","Data Preprocessing","Dashboard Design"],
   affiliation: "LEAD Consulting", image: "assets/activities/images/tableau-marketing-analytics-representative.jpg", fit: "contain",
   alt: "Tableau dashboard and market analysis visuals from a retail marketing project",
   excerpt: "Throughout three weeks of workshops and practice, we aimed to use visualization to close the gap between raw data and executive-level dashboards in the retail industry.",
@@ -99,6 +106,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2026"], year: "2026", status: "Architecture proposal",
   title: "AI-Embedded Healthcare Data Platform",
+  skills: ["Data Architecture","HL7 FHIR","OMOP CDM","Interoperability","Healthcare AI"],
   affiliation: "Hospital data integration architecture", image: "assets/activities/images/healthcare-data-platform-representative.jpg", fit: "contain",
   alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform",
   excerpt: "I explored a shared integration layer for fragmented hospital systems, using HL7 FHIR, OMOP CDM, and a Bronze - Silver - Gold data model to prepare reliable data for analytics and research.",
@@ -112,6 +120,7 @@ window.portfolioActivities = [
  {
   category: "Projects", years: ["2026"], year: "2026", status: "Independent project",
   title: "Fintech Intelligent Platform",
+  skills: ["Data Engineering","Parquet","Data Quality","NLP Pipeline","Knowledge Graph"],
   affiliation: "Extension of my undergraduate thesis", image: "assets/activities/images/fintech-intelligent-platform-representative.jpg", fit: "contain",
   alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications",
   excerpt: "Building on my undergraduate thesis, I proposed an offline pipeline to organize Vietnamese fintech news into a reliable data foundation for future NLP analysis and knowledge extraction.",
@@ -125,6 +134,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2026"], year: "2026", status: "Course completed",
   title: "Deep Learning, LLMs & Retrieval-Augmented Generation - VIASM",
+  skills: ["Deep Learning","LLMs","RAG","Data Labeling","Model APIs"],
   affiliation: "Vietnam Institute for Advanced Study in Mathematics · Banking Academy of Vietnam", image: "assets/activities/images/llm-rag-course-representative.jpg", fit: "contain",
   alt: "Certificate of participation in an LLM and RAG course",
   excerpt: "The course moved from manually calculating backpropagation on day one to building applications with LLMs during the final two days.",
@@ -136,6 +146,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Champion",
   title: "Business Case Analysis & Problem-Solving - Managerial Accounting Mastermind",
+  skills: ["Business Analysis","Root Cause Analysis","Process Analysis","Prioritization"],
   affiliation: "HUST School of Economics and Management", image: "assets/activities/images/managerial-accounting-champion-representative.png", fit: "cover",
   alt: "Team celebrating its Managerial Accounting Mastermind 2024 championship",
   excerpt: "Our team won the Managerial Accounting Mastermind 2024. We examined operational pain points and prioritized possible solutions using an Impact - Feasibility Matrix.",
@@ -147,6 +158,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2023", "2024"], year: "2023 - 2024", status: "Training completed",
   title: "Enterprise Resource Planning & Business Process Integration - SAP S/4HANA",
+  skills: ["SAP S/4HANA","ERP","Data Integration","Business Processes","Data Integrity"],
   affiliation: "SAP University Alliances", image: "assets/activities/images/sap-s4hana-training-representative.jpg", fit: "contain",
   alt: "Certificate of participation in SAP S/4HANA training",
   excerpt: "Through practical exercises, I explored how business transactions connect across departments, from purchase orders and goods receipts to inventory, sales orders, and invoices.",
@@ -159,6 +171,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Six course certificates",
   title: "Google Data Analytics & Business Intelligence Training",
+  skills: ["Data Analytics","Data Modeling","Data Pipelines","Business Intelligence","Dashboards"],
   affiliation: "Google · Coursera", image: "assets/activities/images/google-data-analytics-bi-representative.jpg", fit: "contain",
   alt: "Google and Coursera certificate for Decisions, Decisions: Dashboards and Reports",
   excerpt: "A set of Google courses introduced me to foundational data analyst concepts and helped me understand how Google engineers plan their days while working with customers, technical tools, and executive boards.",
@@ -178,6 +191,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024", "2025"], year: "2024 · 2025", status: "Mentor and speaker",
   title: "Student Mentorship & Academic Experience Sharing - Business Analytics",
+  skills: ["Business Analytics","Communication","Mentorship","Student Engagement"],
   affiliation: "Orientation Day for the 69th and 70th cohorts · HUST", image: "assets/activities/images/orientation-day-group-photo.png", fit: "cover",
   alt: "Sharing experience with junior Business Analytics students",
   excerpt: "Drawing on my experiences through “thick and thin,” I shared activities to help juniors make the most of their four years at HUST.",
@@ -190,6 +204,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Case competition",
   title: "International Corporate Taxation & Compliance Case Competition",
+  skills: ["Tax Research","Transfer Pricing","BEPS","Regulatory Analysis"],
   affiliation: "13 October 2024", image: "assets/activities/images/corporate-tax-competition-representative.jpg", fit: "cover",
   alt: "Participants reviewing materials at an international corporate tax case competition",
   excerpt: "I worked on corporate tax problems involving international double taxation, transfer pricing, BEPS, and the Global Minimum Tax.",
@@ -201,6 +216,7 @@ window.portfolioActivities = [
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Business challenge participant",
   title: "Business Case Consulting - ICAEW Vietnam Business Challenge",
+  skills: ["Problem Structuring","MECE","SWOT","Fishbone Analysis","Business Frameworks"],
   affiliation: "Deloitte · ICAEW Vietnam", image: "assets/activities/images/icaew-business-challenge-representative.jpg", fit: "cover",
   alt: "Team at the ICAEW Vietnam Business Challenge 2024",
   excerpt: "We learned how consultants transform an unfamiliar customer problem into a structured problem-solving journey, using frameworks such as MECE, Fishbone, SWOT, Porter’s Five Forces, and BCG.",
@@ -239,12 +255,6 @@ window.portfolioActivities = [
 ];
 
 const activityGalleries = {
- "AI-Embedded Healthcare Data Platform": [
-  { src: "assets/activities/images/healthcare-data-platform-representative.jpg", alt: "Integrated clinical, operational, and research data architecture for an AI-embedded healthcare platform", fit: "contain" }
- ],
- "Fintech Intelligent Platform": [
-  { src: "assets/activities/images/fintech-intelligent-platform-representative.jpg", alt: "Fintech intelligent platform architecture with data sources, Bronze - Silver - Gold layers, and target applications", fit: "contain" }
- ],
  "Marketing Analytics & Advanced Tableau Visualization": [
   { src: "assets/activities/images/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
   { src: "assets/activities/images/tableau-retail-analysis-view-1.jpg", alt: "First Tableau retail analysis view", fit: "contain" },
