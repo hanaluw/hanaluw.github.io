@@ -62,7 +62,7 @@ window.portfolioActivities = [
    "This was the first time I presented my undergraduate thesis, “Understanding Fintech Services Evolution in Vietnam: A Text Mining Approach on News Media Data,” at an international conference.",
    "Using LDA and BERTopic, our research explored how fintech services in Vietnam have evolved through patterns in financial news coverage.",
    "I received encouraging feedback and had the opportunity to meet other researchers working on the same themes. This experience fascinated me and gave me a better understanding of the academic world: how researchers exchange ideas and develop new research questions."
-  ], links: []
+  ], links: [{ label: "GitHub repository", href: "https://github.com/hanaluw/NLP-Topic-Modeling-for-Vietnames-Fintech-news" }]
  },
  {
   category: "Projects", years: ["2026"], year: "2026", status: "Data management contribution",
@@ -138,7 +138,7 @@ window.portfolioActivities = [
    "I proposed a data platform to centralize Vietnamese fintech news and prepare a reliable foundation for NLP-based analysis and knowledge extraction. The offline pipeline would collect financial news articles, standardize their metadata, and store structured datasets in Parquet format.",
    "The data architecture uses a Bronze - Silver - Gold framework to organize raw articles, cleaned records, and analytical features. I also proposed testing real-world data challenges, including skew, duplicates, schema evolution, late-arriving events, and traffic bursts.",
    "As a future extension, I would integrate NLP-based entity extraction and relationship modeling to develop a fintech knowledge graph. This entry describes a proposed platform and planned evaluation, not a completed deployment."
-  ], links: []
+  ], links: [{ label: "GitHub repository", href: "https://github.com/hanaluw/FSDS-DataEngineer_Coursework" }]
  },
  {
   category: "Other Activities", years: ["2026"], year: "2026", status: "Course completed",
@@ -151,7 +151,10 @@ window.portfolioActivities = [
   description: [
    "The course was taught by Professor Vincent Lefieux, PhD in Statistics and Deputy Director of RTE’s Data Department in France. We went from manually calculating backpropagation on day one to building applications with LLMs during the final two days of the week.",
    "We explored everything from web interfaces and provider APIs to Q&A applications, data labeling, RAG, and running open-weight models locally."
-  ], links: [{ label: "Certificate", href: "assets/certificates/01-llm-and-rag-for-document-analysis-and-exploitation.jpg" }]
+  ], links: [
+   { label: "Certificate", href: "assets/certificates/01-llm-and-rag-for-document-analysis-and-exploitation.jpg" },
+   { label: "GitHub repository", href: "https://github.com/hanaluw/Mini-course-LLM-RAG-for-document-analysis-and-exploitation/tree/main" }
+  ]
  },
  {
   category: "Other Activities", years: ["2024"], year: "2024", status: "Champion",
