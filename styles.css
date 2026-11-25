@@ -111,6 +111,59 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #music>.section{padding-block:20px}
 #music .section .eyebrow{font-size:13px;margin-bottom:8px}
 #music .section h2{font-size:17px;margin-bottom:16px}
+
+/* Shared five-step type scale: display, section, title, body, and detail. */
+:root{--type-display:36px;--type-section:22px;--type-title:16px;--type-body:15px;--type-detail:12px}
+body{font-size:var(--type-body)}
+.brand strong{font-size:var(--type-body)}
+.main-nav a{font-size:var(--type-body)}
+.eyebrow,.hero-copy,.hero-tagline,.section p:not(.eyebrow),.glance p:not(.eyebrow),.glance .label{font-size:var(--type-body)}
+.hero h1{font-size:var(--type-display)}
+.section h2,.note-band h2,.glance h2,.section h3,.credential h2,.timeline-story h2,.story-inline h3,.book-info h2{font-size:var(--type-section)}
+.cv-monogram{font-size:var(--type-title)}
+#home.cv-page #home-title{font-size:var(--type-display)}
+.cv-role,.cv-summary,.cv-entry-head h3,.cv-section p,.cv-section li,.cv-section h2{font-size:var(--type-title)}
+.cv-location,.cv-links,.cv-entry-head span,.cv-subline{font-size:var(--type-body)}
+.cv-kicker,.credential-bottom,.credential-bottom strong,.certificate-open span,.certificate-note,.site-footer strong,.site-footer em,.site-footer span{font-size:var(--type-detail)}
+#library :is(h1,h2,h3,p,span,small,strong){font-size:var(--type-title)!important}
+#music .section .eyebrow,#music .section h2{font-size:var(--type-title)}
+#portfolio .filter-chip,#portfolio .year-filter,#portfolio .year-filter select,#portfolio .activity-excerpt,#portfolio .activity-full p,#portfolio .activity-details summary,#portfolio .activity-links a{font-size:var(--type-body)!important}
+#portfolio .activity-body h3,#portfolio .certificate-row .credential h2{font-size:var(--type-title)}
+#portfolio .activity-meta,#portfolio .activity-affiliation,#portfolio .activity-skills span,#portfolio .activity-details,#portfolio .filter-empty,#portfolio .certificate-row .credential p:not(.eyebrow){font-size:var(--type-detail)!important}
+@media(max-width:700px){
+  :root{--type-display:28px;--type-section:20px;--type-title:16px;--type-body:15px;--type-detail:12px}
+  .main-nav a{font-size:clamp(10px,2.5vw,13px)}
+  #home.cv-page #home-title{font-size:28px}
+  #home #home-title{font-size:28px}
+  #portfolio .activity-body h3{font-size:var(--type-title)}
+}
+
+/* Final shared type scale, applied after legacy page-specific rules. */
+body{font-size:var(--type-body)}
+.brand strong,.main-nav a{font-size:var(--type-body)}
+main .hero h1,#home.cv-page #home-title{font-size:var(--type-display)}
+main .hero h2,main .section h2,main .section h3,main .note-band h2,
+main .glance h2,main .credential h2,main .timeline-story h2,
+main .story-inline h3,main .book-info h2{font-size:var(--type-section)}
+main .eyebrow,main .hero-tagline,main .hero-copy,main p:not(.eyebrow),
+main .cv-role,main .cv-summary,main .cv-entry-head h3,main .cv-section h2,
+main .cv-section p,main .cv-section li,main .cv-subline,main .cv-location,
+main .cv-links,main .cv-entry-head span,main .activity-excerpt,
+main .activity-full p,main .activity-links a,main .filter-chip,
+main .year-filter,main .year-filter select,main .book-info h2,
+#music .section .eyebrow,#music .section h2{font-size:var(--type-body)!important}
+main .activity-body h3,main .certificate-row .credential h2{font-size:var(--type-title)!important}
+main .activity-meta,main .activity-affiliation,main .activity-skills span,
+main .activity-details,main .activity-details summary,main .filter-empty,
+main .certificate-row .credential p:not(.eyebrow),main .certificate-open span,
+main .certificate-note,.site-footer strong,.site-footer em,.site-footer span,
+.cv-kicker,.credential-bottom,.credential-bottom strong{font-size:var(--type-detail)!important}
+@media(max-width:700px){
+  main .hero h1,#home.cv-page #home-title{font-size:var(--type-display)!important}
+  main .section h2,main .note-band h2,main .glance h2,main .credential h2,
+  main .timeline-story h2,main .story-inline h3{font-size:var(--type-section)!important}
+  main .main-nav a{font-size:clamp(10px,2.5vw,13px)!important}
+}
 #music .spotify-embed{min-width:0}
 #music .spotify-embed iframe{display:block;width:100%;height:352px;border:0;border-radius:12px}
 @media(max-width:900px){#music .spotify-embed-grid{grid-template-columns:1fr}}
