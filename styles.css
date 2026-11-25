@@ -135,7 +135,7 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 
 /* Portfolio activities: compact research-style rows, keeping the existing site identity. */
 #portfolio .portfolio-content{padding-bottom:42px}
-#portfolio .portfolio-controls{position:sticky;top:30px;z-index:90;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:14px 0 18px;border-bottom:1px solid var(--line);background:rgba(255,244,248,.97);backdrop-filter:blur(10px)}
+#portfolio .portfolio-controls{position:sticky;top:30px;z-index:90;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:14px 0 18px;border-bottom:1px solid var(--line);background-color:var(--pink);background-image:radial-gradient(circle,var(--dot) 1.4px,transparent 1.6px),radial-gradient(circle,var(--dot) 1.4px,transparent 1.6px);background-size:32px 32px;background-position:0 0,16px 16px}
 #portfolio .category-filters{display:flex;flex-wrap:wrap;gap:8px}
 #portfolio .filter-chip{border:1px solid var(--line);border-radius:2px;background:#fff;padding:8px 14px;color:var(--ink);font-size:13px}
 #portfolio .filter-chip:hover,#portfolio .filter-chip[aria-pressed="true"]{border-color:var(--accent);background:var(--selected);color:var(--ink)}
