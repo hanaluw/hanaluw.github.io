@@ -135,12 +135,12 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 
 /* Portfolio activities: compact research-style rows, keeping the existing site identity. */
 #portfolio .portfolio-content{padding-bottom:42px}
-#portfolio .portfolio-controls{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:14px 0 18px;border-bottom:1px solid var(--line)}
+#portfolio .portfolio-controls{position:sticky;top:30px;z-index:90;display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;padding:14px 0 18px;border-bottom:1px solid var(--line);background:rgba(255,244,248,.97);backdrop-filter:blur(10px)}
 #portfolio .category-filters{display:flex;flex-wrap:wrap;gap:8px}
-#portfolio .filter-chip{border:1px solid var(--line);border-radius:2px;background:#fff;padding:8px 14px;color:var(--ink);font-size:14px}
+#portfolio .filter-chip{border:1px solid var(--line);border-radius:2px;background:#fff;padding:8px 14px;color:var(--ink);font-size:13px}
 #portfolio .filter-chip:hover,#portfolio .filter-chip[aria-pressed="true"]{border-color:var(--accent);background:var(--selected);color:var(--ink)}
-#portfolio .year-filter{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink)}
-#portfolio .year-filter select{border:1px solid var(--line);border-radius:2px;padding:8px 30px 8px 10px;background:#fff;color:var(--ink);font:inherit;font-size:14px}
+#portfolio .year-filter{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink)}
+#portfolio .year-filter select{border:1px solid var(--line);border-radius:2px;padding:8px 30px 8px 10px;background:#fff;color:var(--ink);font:inherit}
 #portfolio .activity-list{display:grid;gap:10px;padding-top:10px}
 #portfolio .activity-item{display:block;padding:14px;background:rgba(255,255,255,.92);border:1px solid rgba(236,213,223,.8);border-radius:2px;box-shadow:0 3px 10px rgba(72,48,61,.06)}
 #portfolio .activity-image{float:left;width:min(42%,360px);height:auto;margin:0 16px 8px 0;padding:0;overflow:visible;border:0;border-radius:0;background:transparent;line-height:0}
@@ -148,40 +148,41 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #portfolio .activity-thumb{display:block;width:100%;height:auto;object-fit:contain;border-radius:0}
 #portfolio .activity-thumb.contain{object-fit:contain;background:transparent}
 #portfolio .activity-body{min-width:0}
-#portfolio .activity-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 9px;margin:0 0 4px;font-family:inherit;font-size:12px;line-height:1.3;color:var(--muted)}
+#portfolio .activity-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 9px;margin:0 0 4px;font-family:inherit;font-size:11px;line-height:1.3;color:var(--muted)}
 #portfolio .activity-type{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.045em}
 #portfolio .activity-status{padding-left:10px;border-left:1px solid var(--line)}
-#portfolio .activity-body h3{margin:0 0 3px;font-size:18px;line-height:1.28;font-weight:600;color:var(--ink)}
-#portfolio .activity-affiliation{margin:0 0 5px!important;font-size:12px!important;line-height:1.35!important;color:var(--muted)}
-#portfolio .activity-excerpt{margin:0!important;font-size:14px!important;line-height:1.45!important}
+#portfolio .activity-body h3{margin:0 0 3px;font-size:17px;line-height:1.28;font-weight:600;color:var(--ink)}
+#portfolio .activity-affiliation{margin:0 0 5px!important;font-size:11px!important;line-height:1.35!important;color:var(--muted)}
+#portfolio .activity-excerpt{margin:0!important;font-size:13px!important;line-height:1.45!important}
 #portfolio .activity-skills{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
-#portfolio .activity-skills span{display:inline-block;padding:3px 6px;background:#f7dce7;color:var(--ink);font-family:inherit;font-size:11px;line-height:1.2;white-space:nowrap;border:1px solid var(--line);border-radius:2px}
-#portfolio .activity-details{clear:both;padding-top:7px;font-size:13px;line-height:1.45}
-#portfolio .activity-details summary{width:max-content;max-width:100%;cursor:pointer;color:var(--accent);font-size:13px;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+#portfolio .activity-skills span{display:inline-block;padding:3px 6px;background:#f7dce7;color:var(--ink);font-family:inherit;font-size:10px;line-height:1.2;white-space:nowrap;border:1px solid var(--line);border-radius:2px}
+#portfolio .activity-details{clear:both;padding-top:7px;font-size:12px;line-height:1.45}
+#portfolio .activity-details summary{width:max-content;max-width:100%;cursor:pointer;color:var(--accent);font-size:12px;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 #portfolio .activity-full{padding-top:5px;max-width:none}
-#portfolio .activity-full p{margin:6px 0!important;font-size:13px!important;line-height:1.45!important}
+#portfolio .activity-full p{margin:6px 0!important;font-size:12px!important;line-height:1.45!important}
 #portfolio .activity-links{display:flex;flex-wrap:wrap;gap:5px 12px;margin-top:7px}
-#portfolio .activity-links a{font-size:12px;color:var(--accent);text-underline-offset:3px}
+#portfolio .activity-links a{font-size:11px;color:var(--accent);text-underline-offset:3px}
 #portfolio .activity-links a:hover{color:var(--ink)}
-#portfolio .filter-empty{padding:14px 0;font-size:14px}
+#portfolio .filter-empty{padding:14px 0;font-size:13px}
 #portfolio .activity-item[hidden]{display:none}
 @media(max-width:700px){
   #portfolio .portfolio-content{width:min(calc(100% - 28px),var(--content))}
   #portfolio .portfolio-controls{gap:10px 12px}
   #portfolio .category-filters{width:100%;gap:6px}
   #portfolio .filter-chip{padding:7px 11px;font-size:12px}
+  #portfolio .year-filter{font-size:12px}
   #portfolio .activity-item{padding:11px;border-radius:2px}
   #portfolio .activity-image{width:44%;max-width:310px;margin-right:12px}
-  #portfolio .activity-body h3{font-size:17px}
-  #portfolio .activity-excerpt{font-size:14px!important;line-height:1.5!important}
-  #portfolio .activity-meta{gap:4px 8px;font-size:11px}
+  #portfolio .activity-body h3{font-size:16px}
+  #portfolio .activity-excerpt{font-size:13px!important;line-height:1.5!important}
+  #portfolio .activity-meta{gap:4px 8px;font-size:10px}
   #portfolio .activity-status{padding-left:8px}
 }
 @media(max-width:430px){
   #portfolio .activity-item{padding:9px}
   #portfolio .activity-image{width:40%;margin-right:9px}
-  #portfolio .activity-body h3{font-size:16px}
-  #portfolio .activity-affiliation{font-size:12px!important}
+  #portfolio .activity-body h3{font-size:15px}
+  #portfolio .activity-affiliation{font-size:11px!important}
 }
 
 #portfolio .activity-gallery{display:flex;align-items:center;gap:8px;margin-top:8px}
@@ -191,7 +192,7 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 #portfolio .activity-gallery-image:hover{opacity:.94}
 #portfolio .activity-gallery-image img{display:block;width:100%;height:100%;object-fit:contain;border-radius:0}
 #portfolio .activity-gallery-image img.contain{object-fit:contain;background:transparent}
-#portfolio .activity-gallery-nav{flex:0 0 32px;width:32px;height:32px;padding:0;border:1px solid var(--line);border-radius:2px;background:var(--selected);color:var(--ink);font-family:inherit;font-size:22px;line-height:1}
+#portfolio .activity-gallery-nav{flex:0 0 32px;width:32px;height:32px;padding:0;border:1px solid var(--line);border-radius:2px;background:var(--selected);color:var(--ink);font-family:inherit;font-size:21px;line-height:1}
 #portfolio .activity-gallery-nav:hover{border-color:var(--accent)}
 #portfolio .activity-gallery-nav[hidden]{display:none}
 #portfolio .activity-gallery-nav:disabled{opacity:.4;cursor:default}
