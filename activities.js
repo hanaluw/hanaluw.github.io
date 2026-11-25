@@ -274,6 +274,9 @@ window.portfolioActivities = [
 ];
 
 const activityGalleries = {
+ "AI-Embedded Healthcare Data Platform": [
+  { src: "assets/activities/images/hospital-system-integration.png", alt: "Public hospital landscape sample: draft integration diagram for health informatics systems", fit: "contain" }
+ ],
  "Marketing Analytics & Advanced Tableau Visualization": [
   { src: "assets/activities/images/tableau-training-certificate.jpg", alt: "Certificate for the Tableau workshop", fit: "contain" },
   { src: "assets/activities/images/tableau-retail-analysis-view-1.jpg", alt: "First Tableau retail analysis view", fit: "contain" },
