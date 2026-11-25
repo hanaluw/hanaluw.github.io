@@ -66,7 +66,7 @@ window.portfolioActivities = [
  },
  {
   category: "Projects", years: ["2026"], year: "2026", status: "Data management contribution",
-  title: "Scholarship Data Management for Children with Disabilities",
+  title: "Data Management for Children with Disabilities",
   highlights: ["2,133 scholarship beneficiary records","Python and Excel","87 cases (4%)","manual verification","data quality","Vietnam Fund for Children with Disabilities"],
   skills: ["Python","Excel","Data Cleaning","Record Reconciliation","Data Quality"],
   affiliation: "Vietnam Fund for Children with Disabilities", image: "assets/activities/images/scholarship-data-management-representative.jpg", fit: "contain",
@@ -252,7 +252,7 @@ const portfolioActivityOrder = [
  "Fintech Intelligent Platform",
  "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data",
  "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies",
- "Scholarship Data Management for Children with Disabilities",
+ "Data Management for Children with Disabilities",
  "Marketing Analytics & Advanced Tableau Visualization",
   "Equity Research & Financial Forecasting - CFA Institute Research Challenge",
  "Quantitative Research on Student Academic Performance - SPSS",
