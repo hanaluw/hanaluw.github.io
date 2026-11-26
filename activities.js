@@ -287,6 +287,7 @@ const activityGalleries = {
   { src: "assets/activities/images/managerial-accounting-2023-representative.jpg", alt: "I participated and failed in 2023. My first Business Case Competition - Managerial Accounting Mastermind 2023", fit: "contain" }
  ],
  "Measuring Fintech Development through Composite Indices: A Text-Mining-Based Review of Fintech Index Studies": [
+  { src: "assets/activities/images/fintech-index-third-prize-team.jpg", alt: "Our team with the third-prize award at the 2024 National Student Scientific Research Conference", fit: "cover" },
   { src: "assets/activities/images/fintech-index-research-certificate-1.jpg", alt: "Certificate related to the fintech index research", fit: "contain" },
   { src: "assets/activities/images/fintech-index-research-certificate-2.jpg", alt: "Research presentation certificate", fit: "contain" },
   { src: "assets/activities/images/fintech-index-research-certificate-3.jpg", alt: "Student research award certificate", fit: "contain" }
