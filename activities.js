@@ -313,6 +313,7 @@ const activityGalleries = {
   { src: "assets/activities/images/business-analytics-mentorship-representative.jpg", alt: "I delivered a friendly pitching", fit: "cover" }
  ],
  "Understanding Fintech Services Evolution in Vietnam: A Text-Mining Approach on News Media Data": [
+  { src: "assets/activities/images/fintech-thesis-defense-family.jpg", alt: "Celebrating my thesis defense with my family at Hanoi University of Science and Technology", fit: "cover" },
   { src: "assets/activities/images/fintech-thesis-research-discussion.jpg", alt: "Fintech thesis discussion with fellow researchers", fit: "cover" },
   { src: "assets/activities/images/fintech-thesis-conference-discussion.jpg", alt: "Conference discussion about the fintech research", fit: "cover" },
   { src: "assets/activities/images/fintech-thesis-presentation.jpg", alt: "Presenting findings from the fintech thesis", fit: "cover" },
