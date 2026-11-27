@@ -267,5 +267,11 @@ main .certificate-note,.site-footer strong,.site-footer em,.site-footer span,
 #contact-dialog{width:min(360px,calc(100% - 24px));padding:22px 24px 26px;text-align:center}
 #contact-dialog h2{margin:8px 44px 12px;font-size:23px}
 #contact-dialog img{display:block;width:min(208px,100%);height:auto;margin:0 auto}
+
+/* Show the full original portrait inside a larger square frame. */
+#home .cv-header{grid-template-columns:172px minmax(0,1fr) auto}
+#home .cv-profile-photo{width:160px;height:160px;aspect-ratio:1;object-fit:contain;object-position:center;border:0;border-radius:2px;background:#fff}
+@media(max-width:700px){#home .cv-header{grid-template-columns:108px minmax(0,1fr)}#home .cv-profile-photo{width:104px;height:104px}}
+@media(max-width:380px){#home .cv-header{grid-template-columns:80px minmax(0,1fr)}#home .cv-profile-photo{width:76px;height:76px}}
 #contact-dialog p{margin:10px 0 0;font-size:16px;overflow-wrap:anywhere}
 #contact-dialog a{text-decoration-color:var(--accent);text-underline-offset:3px}
