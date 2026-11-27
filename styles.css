@@ -190,9 +190,9 @@ main .certificate-note,.site-footer strong,.site-footer em,.site-footer span,
 #home .cv-section[aria-labelledby="cv-education"] .cv-entry-head h3{display:flex;align-items:center;gap:10px}
 #home .hust-education-logo{display:block;width:26px;height:39px;object-fit:contain;flex:none}
 
-/* LEAD Consulting identity in both CV roles. */
+/* Employer logos in the Home CV. */
 #home .cv-section[aria-labelledby="cv-experience"] .cv-entry-head h3{display:flex;align-items:center;gap:10px}
-#home .lead-consulting-logo{display:block;width:88px;height:20px;object-fit:contain;flex:none}
+#home .cv-employer-logo{display:block;width:88px;height:20px;object-fit:contain;flex:none}
 
 #portfolio .certificate-pdf-link{display:inline-block;margin-top:10px;font-size:13px;color:var(--accent);text-underline-offset:3px}
 
