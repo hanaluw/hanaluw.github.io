@@ -95,3 +95,34 @@ categoryFilters.forEach(button=>button.addEventListener('click',()=>{
 }));
 yearFilter.addEventListener('change',filterActivities);
 filterActivities();
+
+const contactDialog = document.querySelector('#contact-dialog');
+if (typeof contactDialog.showModal === 'function') {
+  const contactTitle = contactDialog.querySelector('h2');
+  const contactQr = contactDialog.querySelector('img');
+  const contactLink = contactDialog.querySelector('#contact-direct-link');
+  let contactTrigger;
+
+  for (const trigger of document.querySelectorAll('[data-contact-qr]')) {
+    trigger.setAttribute('aria-haspopup', 'dialog');
+    trigger.addEventListener('click', event => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+
+      contactTrigger = trigger;
+      contactTitle.textContent = trigger.textContent;
+      contactQr.alt = trigger.textContent + ' QR code';
+      contactQr.src = trigger.dataset.contactQr;
+      contactLink.href = trigger.href;
+      contactLink.target = trigger.target;
+      contactLink.textContent = trigger.dataset.contactDisplay;
+      contactDialog.showModal();
+    });
+  }
+
+  contactDialog.querySelector('.dialog-close').addEventListener('click', () => contactDialog.close());
+  contactDialog.addEventListener('click', event => {
+    if (event.target === contactDialog) contactDialog.close();
+  });
+  contactDialog.addEventListener('close', () => contactTrigger?.focus());
+}

@@ -260,3 +260,11 @@ main .certificate-note,.site-footer strong,.site-footer em,.site-footer span,
 #portfolio .activity-gallery-nav[hidden]{display:none}
 #portfolio .activity-gallery-nav:disabled{opacity:.4;cursor:default}
 @media(max-width:700px){#portfolio .activity-gallery-stage{grid-template-columns:1fr}#portfolio .activity-gallery-image{height:220px}}
+
+/* Home contact links and their shared QR dialog. */
+#home .cv-links{flex-wrap:wrap;row-gap:9px}
+#contact-dialog{width:min(360px,calc(100% - 24px));padding:22px 24px 26px;text-align:center}
+#contact-dialog h2{margin:8px 44px 12px;font-size:23px}
+#contact-dialog img{display:block;width:min(208px,100%);height:auto;margin:0 auto}
+#contact-dialog p{margin:10px 0 0;font-size:16px;overflow-wrap:anywhere}
+#contact-dialog a{text-decoration-color:var(--accent);text-underline-offset:3px}

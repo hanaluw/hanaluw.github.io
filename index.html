@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css?v=home-employer-logos-20261127" rel="stylesheet"/>
+<link href="styles.css?v=home-contact-qr-20261127" rel="stylesheet"/>
 <script defer="" src="activities.js?v=fintech-index-award-photo-20261126"></script>
-<script defer="" src="script.js?v=gallery-three-20261125"></script>
+<script defer="" src="script.js?v=home-contact-qr-20261127"></script>
 </head>
 <body>
 <header class="site-header">
@@ -32,15 +32,18 @@
 <header class="cv-header">
 <div aria-hidden="true" class="cv-monogram">GL</div>
 <div class="cv-identity">
-<p class="cv-kicker">ACADEMIC &amp; PROFESSIONAL CV</p>
+<p class="cv-kicker">About me</p>
 <h1 id="home-title">GIA-HAN LUU</h1>
 <p class="cv-role">Business Analytics · Health Informatics · Applied NLP</p>
 <p class="cv-location">Hanoi, Vietnam</p>
 </div>
-<div aria-label="Professional profiles" class="cv-links">
-<a href="https://www.linkedin.com/in/han-luu-gia" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
-<a href="https://github.com/hanaluw" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
-</div>
+<nav aria-label="Contact methods" class="cv-links">
+  <a href="tel:+84344397939" data-contact-qr="assets/contact/phone.png" data-contact-display="+84 344 397 939">Phone</a>
+  <a href="mailto:hanluu.0421@gmail.com" data-contact-qr="assets/contact/email.png" data-contact-display="hanluu.0421@gmail.com">Email</a>
+  <a href="https://orcid.org/0009-0005-0443-7263" data-contact-qr="assets/contact/orcid.png" data-contact-display="0009-0005-0443-7263" target="_blank" rel="noopener noreferrer">ORCID</a>
+  <a href="https://www.linkedin.com/in/gia-h%C3%A2n-l%C6%B0u-104906294/" data-contact-qr="assets/contact/linkedin.png" data-contact-display="Open LinkedIn profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a href="https://github.com/hanaluw" data-contact-qr="assets/contact/github.png" data-contact-display="Open GitHub profile" target="_blank" rel="noopener noreferrer">GitHub</a>
+</nav>
 </header>
 <div class="cv-content">
 <section aria-labelledby="cv-research" class="cv-section">
@@ -111,5 +114,11 @@
 </main>
 <footer class="site-footer"><div class="container"><strong>GIA-HAN LUU</strong><span>Personal portfolio</span></div></footer>
 <dialog aria-labelledby="certificate-dialog-title" id="certificate-dialog"><button aria-label="Close certificate" class="dialog-close" type="button">×</button><h2 id="certificate-dialog-title"></h2><img alt="" src=""/></dialog>
+<dialog aria-labelledby="contact-dialog-title" id="contact-dialog">
+  <button aria-label="Close contact details" class="dialog-close" type="button">×</button>
+  <h2 id="contact-dialog-title"></h2>
+  <img alt="Contact QR code" width="208" height="208"/>
+  <p><a rel="noopener noreferrer" id="contact-direct-link"></a></p>
+</dialog>
 </body>
 </html>
