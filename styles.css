@@ -51,6 +51,7 @@ main .eyebrow,main .hero-tagline,main .secondary,main .label,main .credential-bo
 .cv-sheet{max-width:1080px;background:var(--white);border:1px solid var(--line);border-top:9px solid var(--accent);border-radius:8px;overflow:hidden}
 .cv-header{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:24px;align-items:center;padding:32px 42px 28px;border-bottom:2px solid var(--line);background:var(--white)}
 .cv-monogram{display:grid;place-items:center;width:82px;height:82px;border-radius:50%;background:var(--selected);border:2px solid var(--line);font-size:28px;font-weight:700;color:var(--ink)}
+.cv-profile-photo{display:block;object-fit:cover;object-position:70% 72%}
 .cv-kicker{margin:0 0 6px;font-size:12px;letter-spacing:.13em;font-weight:700;color:var(--accent)}
 #home.cv-page #home-title{font-size:42px;font-weight:700;line-height:1.08;letter-spacing:.015em;margin:0 0 7px;color:var(--ink)}
 .cv-role{margin:0 0 5px;font-size:16px;line-height:1.35;font-weight:600}
